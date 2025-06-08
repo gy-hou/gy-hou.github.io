@@ -1,47 +1,13 @@
 /* ==========================================================================
-   SIDEBAR (Modified to Header Style)
-   ========================================================================== */
-
-/*
-   Default - Now Header Style
+   SIDEBAR (MODIFIED AS HEADER)
    ========================================================================== */
 
    .sidebar {
-    -webkit-transform: translate3d(0, 0 , 0);
-            transform: translate3d(0, 0 , 0);
-  
-    @include clearfix();
-    margin-bottom: 1em;
-    
-    // Remove fixed positioning and make it a normal header
-    position: relative;
     width: 100%;
-    height: auto;
-    overflow-y: visible;
     padding: 2em 0;
-    background: var(--global-bg-color);
-    border-bottom: 1px solid var(--global-border-color);
-  
-    @media (orientation: portrait) {
-      margin-top: 0;
-      padding: 1.5em 0;
-    }
-  
-    // Remove all the large breakpoint fixed positioning
-    @include breakpoint($large) {
-      position: relative;
-      height: auto;
-      overflow-y: visible;
-      padding: 2em 0;
-      opacity: 1;
-      width: 100%;
-      max-width: none;
-    }
-  
-    @include breakpoint($x-large) {
-      max-width: none;
-      padding-right: 0;
-    }
+    text-align: center; // Center-aligns all text content within the new header
+    border-bottom: 1px solid var(--global-border-color); // Adds a nice separator line
+    margin-bottom: 2em; // Adds some space before the main content starts
   
     h2, h3, h4, h5, h6 {
       margin-bottom: 0;
@@ -63,132 +29,52 @@
     }
   }
   
-  .sidebar__right {
-    margin-bottom: 1em;
-  
-    @include breakpoint($large) {
-      position: relative;
-      float: right;
-      width: $right-sidebar-width-narrow;
-      margin-left: span(0.5 of 12);
-      z-index: 10;
-    }
-  
-    @include breakpoint($x-large) {
-      width: $right-sidebar-width;
-    }
-  }
-  
   /*
-     Author profile and links - Header Layout
+     Author profile and links
      ========================================================================== */
   
   .author__avatar {
-    display: block;
-    text-align: center;
-    margin: 0 auto 1em;
+    display: block; // Ensures the avatar is a block element
     width: auto;
     height: auto;
+    margin-bottom: 1em; // Space between avatar and text
   
     img {
-      max-width: 150px;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
+      max-width: 175px; // You can adjust this value to make the image bigger or smaller
+      border-radius: 50%; // Makes the image a circle
+      margin-left: auto;  // These two lines center the image
+      margin-right: auto;
       padding: 5px;
       border: 1px solid var(--global-border-color);
-      object-fit: cover;
-  
-      @include breakpoint($medium) {
-        max-width: 175px;
-        width: 175px;
-        height: 175px;
-      }
     }
   }
   
   .author__content {
     display: block;
     width: 100%;
-    text-align: center;
     padding: 0;
-    line-height: 1.4;
   }
   
   .author__name {
-    margin: 0 0 0.5em;
-    font-size: $type-size-2;
-    font-weight: bold;
-  
-    @include breakpoint($large) {
-      margin: 0 0 0.5em;
-      font-size: $type-size-1;
-    }
-  }
-  
-  .sidebar .author__name {
+    margin: 0 0 0.5em; // Add some space below the name
     font-family: $sans-serif;
-    font-size: $type-size-2;
-    text-align: center;
-  
-    @include breakpoint($large) {
-      font-size: $type-size-1;
-    }
-  }
-  
-  .sidebar .author__desktop {
-    display: block;
-  }
-  
-  .author__pronouns {
-    margin: 0 0 0.5em;
-    text-align: center;
-    font-size: $type-size-5;
-    color: var(--global-text-color-light);
-  
-    @include breakpoint($large) {
-      margin: 0 0 0.5em;
-    }
+    font-size: $type-size-3; // Make the name a bit larger
   }
   
   .author__bio {
-    margin: 0 0 1em;
-    text-align: center;
-    font-size: $type-size-5;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    @include breakpoint($large) {
-      margin: 0 auto 1.5em;
-      font-size: $type-size-4;
-    }
+    margin: 0 auto 1em; // Center the bio block and add space below
+    max-width: 400px; // Constrain the width of the bio text for readability
   }
   
+  
+  /* Make the social media links always visible and centered */
   .author__urls-wrapper {
-    position: relative;
     display: block;
-    text-align: center;
     font-family: $sans-serif;
-    z-index: 10;
-    cursor: default;
-  
-    li:last-child {
-      a {
-        margin-bottom: 0;
-      }
-    }
-  
-    button {
-      display: none;
-    }
   }
   
   .author__urls {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1em;
+    display: block;
     position: relative;
     margin: 0;
     padding: 0;
@@ -197,57 +83,33 @@
     background: transparent;
     box-shadow: none;
   
-    &:before,
-    &:after {
-      display: none;
-    }
-  
     li {
+      display: inline-block; // Display links side-by-side
+      margin: 0 0.5em;
       white-space: nowrap;
     }
   
     a {
-      display: inline-flex;
-      align-items: center;
-      margin: 0;
-      padding: 0.5em 1em;
+      padding: 0;
       color: inherit;
       font-size: $type-size-5;
       text-decoration: none;
-      border: 1px solid var(--global-border-color);
-      border-radius: $border-radius;
-      background: var(--global-bg-color);
-      transition: all 0.2s ease-in-out;
   
       &:hover {
-        text-decoration: none;
-        background: var(--global-border-color);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-  
-      i {
-        margin-right: 0.5em;
+        text-decoration: underline;
       }
     }
   
-    @include breakpoint($small) {
-      gap: 0.5em;
-      
-      a {
-        padding: 0.4em 0.8em;
-        font-size: $type-size-6;
-      }
+    /* These are for the mobile dropdown, which we don't need anymore */
+    button,
+    &:before,
+    &:after {
+      display: none;
     }
   }
   
-  // Additional container styles for centered layout
-  .sidebar__header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1em;
-  
-    @include breakpoint($large) {
-      padding: 0 2em;
-    }
+  /* Hide unused classes */
+  .sidebar__right,
+  .sidebar .author__desktop {
+    display: none;
   }
