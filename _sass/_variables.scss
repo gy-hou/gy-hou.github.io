@@ -37,6 +37,24 @@ $black-color: #000000 !default;
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
+// Light mode colors
+$light-bg-color: #F7FAFC !default;
+$light-card-bg-color: #FFFFFF !default;
+$light-text-color: #2D3748 !default;
+$light-text-color-light: #718096 !default;
+$light-border-color: #E2E8F0 !default;
+$light-theme-color: #088F8F !default;
+$light-hover-color: #067D7D !default;
+
+// Dark mode colors
+$dark-bg-color: #1A202C !default;
+$dark-card-bg-color: #2D3748 !default;
+$dark-text-color: #E2E8F0 !default;
+$dark-text-color-light: #A0AEC0 !default;
+$dark-border-color: #4A5568 !default;
+$dark-theme-color: #38B2AC !default;
+$dark-hover-color: #4FD1C5 !default;
+
 // Font awesome location
 $fa-font-path: "../webfonts";
 
@@ -50,3 +68,23 @@ $back-to-top-right: 30px;
 $back-to-top-diameter: 40px;
 $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
+
+// Font families
+$font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !default;
+$font-serif: 'Crimson Text', 'Georgia', 'Times New Roman', serif !default;
+$font-mono: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace !default;
+$font-neuton: 'Neuton', 'Georgia', serif !default;
+$font-noto-serif: 'Noto Serif', 'Georgia', serif !default;
+$font-anta: 'Anta', 'Arial Black', sans-serif !default;
+$font-source-serif: 'Source Serif Pro', Georgia, serif !default;
+
+// CSS Custom Properties for fonts
+:root {
+  --font-primary: #{$font-primary};
+  --font-serif: #{$font-serif};
+  --font-mono: #{$font-mono};
+  --font-neuton: #{$font-neuton};
+  --font-noto-serif: #{$font-noto-serif};
+  --font-anta: #{$font-anta};
+  --font-source-serif: #{$font-source-serif};
+}

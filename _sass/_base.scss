@@ -195,9 +195,26 @@ ul.task-list input[type="checkbox"] {
 .profile {
   width: 100%;
 
+  .name {
+    // 使用 h1 样式
+    font-family: var(--font-primary);
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  
+  .position, .title {
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+  }
+  
+  .description, .more-info p {
+    font-family: var(--font-serif);
+    font-size: 0.8rem;
+  }
+
   .more-info {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-top: 2px;
     font-family: monospace;
 
     p {
@@ -1417,3 +1434,259 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+
+// Social icons
+.social a {
+  color: var(--global-text-color-light);
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+// Project tags
+.project-tags .badge {
+  background-color: var(--global-divider-color);
+  color: var(--global-text-color-light);
+}
+
+// News items
+.news .date {
+  color: var(--global-text-color-light);
+}
+
+// Publication highlights
+.publication .venue {
+  color: var(--global-theme-color);
+}
+
+// 4. 导航组件
+.navbar {
+  .nav-link, .navbar-nav .nav-link {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+// 5. 内容区域
+.news {
+  .post-title {
+    // 使用 h3/h4 样式
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .date, .post-meta {
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+  }
+  
+  .post-description, p {
+    font-family: var(--font-serif);
+  }
+}
+
+.projects {
+  .card-title {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-family: var(--font-serif);
+  }
+  
+  .badge, .project-tags .badge {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+// 6. 发布/论文列表
+.publications {
+  .title {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .author {
+    font-family: var(--font-serif);
+  }
+  
+  .venue {
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+  
+  .year {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+  }
+}
+
+// 7. 交互元素
+.btn, button, .links a.btn {
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+input, textarea, select, .form-control {
+  font-family: var(--font-primary);
+}
+
+// 8. 代码和技术内容
+pre, code, .highlight {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+// 9. 特殊组件
+blockquote {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.badge, .tag {
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+// 10. 页脚组件
+footer {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+}
+
+// 11. 响应式字体
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+.profile .more-info {
+  p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    
+    i {
+      width: 20px;
+      margin-right: 8px;
+      color: var(--global-theme-color);
+    }
+    
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+      
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// Subtitle 字体设置
+.post-header .desc,
+.desc {
+  font-family: var(--font-noto-serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+// 基础字体设置 - 主体内容使用Neuton
+body {
+  font-family: var(--font-neuton);
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+// 标题保持原有设置
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+}
+
+// 导航标题使用Anta bold
+.navbar-nav .nav-link,
+.nav-link {
+  font-family: var(--font-anta);
+  font-weight: 400; // Anta字体本身就很粗
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+// 当前页面导航项
+.navbar-nav .nav-item.active > .nav-link {
+  font-family: var(--font-anta);
+  font-weight: 400;
+}
+
+// 首页小标题样式
+.selected-papers h2,
+.latest-posts h2,
+.news h2,
+.announcements h2 {
+  text-transform: capitalize;
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+// 通用小标题样式
+h2 a[href*="publications"],
+h2 a[href*="blog"],
+h2:contains("selected publications"),
+h2:contains("latest posts"),
+h2:contains("news") {
+  text-transform: capitalize;
+}
+
+// About page content styling - improved spacing
+.page-content,
+.post-content,
+main p,
+main li,
+main div:not(.profile):not(.card):not(.navbar) {
+  font-family: 'Source Serif Pro', Georgia, serif;
+  font-size: 21px;
+  line-height: 1.8; // 增加行高从1.6到1.8
+  letter-spacing: 0.3px; // 增加字母间距
+}
+
+// Ensure about page biography text uses Source Serif Pro with better spacing
+.about-content,
+.biography {
+  font-family: 'Source Serif Pro', Georgia, serif;
+  font-size: 21px;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+
+// Specific styling for about page main content
+.post article p {
+  margin-bottom: 1.2rem; // 增加段落间距
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+
+
