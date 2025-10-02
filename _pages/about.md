@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.khoury.northeastern.edu/'>Northeastern University - Khoury College of Computer Sciences</a>
+subtitle: <a href='https://www.khoury.northeastern.edu/'>Awaiting--</a>
 tabs: true         
 
 profile:
@@ -34,8 +34,7 @@ Application of Machine Learning, Deep learning,Fintech
 
 **Education Background**
 
-* Master of Science in Computer Science:  Northeastern University
-* Master of Quantitative Finance: University of Science and Technology of China
+* Master of Finance: University of Science and Technology of China
 
 **Current Goal** 
 
