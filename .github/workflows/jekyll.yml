@@ -30,7 +30,7 @@ jobs:
       - name: Setup Ruby # 步骤2：设置 Ruby 环境
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # 你可以根据主题要求调整 Ruby 版本
+          ruby-version: '3.2' # <-- 这里是唯一的修改
           bundler-cache: true # 关键步骤：自动运行 bundle install 并缓存依赖项
       - name: Setup Pages # 步骤3：配置 GitHub Pages
         id: pages
