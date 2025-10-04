@@ -89,7 +89,7 @@ year={1905}
 }
 
 @Article{einstein1905photoelectriceffect,
-bibtex_show={true},
+bibtex*show={true},
 abbr={Ann. Phys.},
 title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
 author={Albert Einstein},
@@ -100,7 +100,7 @@ number={6},
 pages={132--148},
 year={1905},
 doi={10.1002/andp.19053220607},
-award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 _for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect_},
+award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 \_for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
 award_name={Nobel Prize}
 }
 
