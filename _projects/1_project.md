@@ -2,7 +2,7 @@
 layout: page
 title: Advanced-Prompts-Database
 description: One-Click to get your ChatGPT-database without Programming.
-img: 
+img:
 importance: 1
 category: work
 related_publications: false
@@ -15,12 +15,12 @@ related_publications: false
 ---
 
 ### 📌 Introduction
-🟥 One-Click-Deploy Your Own Advanced ChatGPT-prompts-database by Vercel
 
+🟥 One-Click-Deploy Your Own Advanced ChatGPT-prompts-database by Vercel
 
 🟥 Out of respect for the original Prompt creators, we will continue to add the Prompt creators' Social links/GitHub links.
 
-"A GitHub repository dedicated to advanced usage and commands for ChatGPT. Includes setup guides for web deployment, advanced-chatgpt-prompts database, and tutorials about how to design advanced prompt." 
+"A GitHub repository dedicated to advanced usage and commands for ChatGPT. Includes setup guides for web deployment, advanced-chatgpt-prompts database, and tutorials about how to design advanced prompt."
 You only need to share one advanced prompt and you can submit it through Pull Requests or in the Issues section to become a contributor.
 
 Given our limited individual resources, we don't have a plethora of advanced prompts. We are open to adding multiple collaborators and contributors. Embrace the open-source spirit!
@@ -44,7 +44,3 @@ This repository includes:
 📕 Resources for learning about prompts
 
 📽️ Personally developed advanced prompts
-
-
-
-

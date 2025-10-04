@@ -201,13 +201,15 @@ ul.task-list input[type="checkbox"] {
     font-size: 2.8rem;
     font-weight: 700;
   }
-  
-  .position, .title {
+
+  .position,
+  .title {
     font-family: var(--font-primary);
     font-size: 1.1rem;
   }
-  
-  .description, .more-info p {
+
+  .description,
+  .more-info p {
     font-family: var(--font-serif);
     font-size: 0.8rem;
   }
@@ -1435,7 +1437,6 @@ figure.cover {
   }
 }
 
-
 // Social icons
 .social a {
   color: var(--global-text-color-light);
@@ -1462,7 +1463,8 @@ figure.cover {
 
 // 4. 导航组件
 .navbar {
-  .nav-link, .navbar-nav .nav-link {
+  .nav-link,
+  .navbar-nav .nav-link {
     font-family: var(--font-primary);
     font-size: 1rem;
     font-weight: 500;
@@ -1477,13 +1479,15 @@ figure.cover {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  
-  .date, .post-meta {
+
+  .date,
+  .post-meta {
     font-family: var(--font-primary);
     font-size: 0.85rem;
   }
-  
-  .post-description, p {
+
+  .post-description,
+  p {
     font-family: var(--font-serif);
   }
 }
@@ -1494,12 +1498,13 @@ figure.cover {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  
+
   .card-text {
     font-family: var(--font-serif);
   }
-  
-  .badge, .project-tags .badge {
+
+  .badge,
+  .project-tags .badge {
     font-family: var(--font-primary);
     font-size: 0.8rem;
     font-weight: 500;
@@ -1513,16 +1518,16 @@ figure.cover {
     font-weight: 700;
     font-size: 1.1rem;
   }
-  
+
   .author {
     font-family: var(--font-serif);
   }
-  
+
   .venue {
     font-family: var(--font-serif);
     font-style: italic;
   }
-  
+
   .year {
     font-family: var(--font-primary);
     font-size: 0.9rem;
@@ -1530,17 +1535,24 @@ figure.cover {
 }
 
 // 7. 交互元素
-.btn, button, .links a.btn {
+.btn,
+button,
+.links a.btn {
   font-family: var(--font-primary);
   font-weight: 600;
 }
 
-input, textarea, select, .form-control {
+input,
+textarea,
+select,
+.form-control {
   font-family: var(--font-primary);
 }
 
 // 8. 代码和技术内容
-pre, code, .highlight {
+pre,
+code,
+.highlight {
   font-family: var(--font-mono);
   font-size: 0.9rem;
 }
@@ -1551,7 +1563,8 @@ blockquote {
   font-style: italic;
 }
 
-.badge, .tag {
+.badge,
+.tag {
   font-family: var(--font-primary);
   font-size: 0.8rem;
   font-weight: 500;
@@ -1568,15 +1581,15 @@ footer {
   html {
     font-size: 15px;
   }
-  
+
   h1 {
     font-size: 2.2rem;
   }
-  
+
   h2 {
     font-size: 1.8rem;
   }
-  
+
   h3 {
     font-size: 1.3rem;
   }
@@ -1587,17 +1600,17 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
-    
+
     i {
       width: 20px;
       margin-right: 8px;
       color: var(--global-theme-color);
     }
-    
+
     a {
       color: var(--global-text-color);
       text-decoration: none;
-      
+
       &:hover {
         color: var(--global-theme-color);
       }
@@ -1622,7 +1635,12 @@ body {
 }
 
 // 标题保持原有设置
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-primary);
 }
 
@@ -1667,7 +1685,7 @@ h2:contains("news") {
 main p,
 main li,
 main div:not(.profile):not(.card):not(.navbar) {
-  font-family: 'Source Serif Pro', Georgia, serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 21px;
   line-height: 1.8; // 增加行高从1.6到1.8
   letter-spacing: 0.3px; // 增加字母间距
@@ -1676,7 +1694,7 @@ main div:not(.profile):not(.card):not(.navbar) {
 // Ensure about page biography text uses Source Serif Pro with better spacing
 .about-content,
 .biography {
-  font-family: 'Source Serif Pro', Georgia, serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 21px;
   line-height: 1.8;
   letter-spacing: 0.3px;
@@ -1688,5 +1706,3 @@ main div:not(.profile):not(.card):not(.navbar) {
   line-height: 1.8;
   letter-spacing: 0.3px;
 }
-
-

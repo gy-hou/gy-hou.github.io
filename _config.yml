@@ -4,12 +4,12 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: G.Y.
-middle_name: 
+middle_name:
 last_name: Hou
 contact_note: >
-  
+
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  
+
 footer_text: >
 
 keywords: jekyll, academic-website, portfolio-website # add your own keywords or leave empty
@@ -245,7 +245,6 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-
 
 # Sitemap settings
 defaults:

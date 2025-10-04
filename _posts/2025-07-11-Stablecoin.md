@@ -23,9 +23,9 @@ The essence of money is to act as a universal measure of value. This value requi
 
 Historically controlled by governments, blockchain technology now enables various entities to issue currency based on their credit:
 
-  * **National Credit:** Backs official state currencies (e.g., USD).
-  * **Corporate Credit:** Backs stablecoins from companies like \<a href="[https://tether.to/](https://tether.to/)"\>Tether\</a\> (e.g., USDT).
-  * **Personal/Community Credit:** Backs tokens supported by individuals or groups (e.g., Trump Coin).
+- **National Credit:** Backs official state currencies (e.g., USD).
+- **Corporate Credit:** Backs stablecoins from companies like \<a href="[https://tether.to/](https://tether.to/)"\>Tether\</a\> (e.g., USDT).
+- **Personal/Community Credit:** Backs tokens supported by individuals or groups (e.g., Trump Coin).
 
 ## How Stability is Maintained
 
@@ -45,7 +45,7 @@ reserve_assets:
 
 ## Applications & Outlook
 
-Stablecoins have wide-ranging applications in areas like \<a href="[https://en.wikipedia.org/wiki/Decentralized\_finance](https://en.wikipedia.org/wiki/Decentralized_finance)"\>decentralized finance (DeFi)\</a\>, cross-border payments, and as a hedge against inflation. While their profit potential is lower than other cryptocurrencies, their utility is very high. However, the space faces challenges, including regulatory uncertainty and a technological race between private issuers and government-led Central Bank Digital Currencies (CBDCs).
+Stablecoins have wide-ranging applications in areas like \<a href="[https://en.wikipedia.org/wiki/Decentralized_finance](https://en.wikipedia.org/wiki/Decentralized_finance)"\>decentralized finance (DeFi)\</a\>, cross-border payments, and as a hedge against inflation. While their profit potential is lower than other cryptocurrencies, their utility is very high. However, the space faces challenges, including regulatory uncertainty and a technological race between private issuers and government-led Central Bank Digital Currencies (CBDCs).
 
 ## The Path to Adoption
 
