@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.khoury.northeastern.edu/'>Awaiting--</a>
+subtitle: <a href='https://www.google.com/'>Awaiting--</a>
 tabs: true
 
 profile:
