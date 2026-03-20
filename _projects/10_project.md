@@ -5,7 +5,7 @@ description: A project with an introduction section
 img: assets/img/5.jpg
 importance: 5
 category: work
-project_intro: true 
+project_intro: true
 icons:
   - file: javascript/javascript-original.svg
     site: devicons

@@ -10,7 +10,6 @@ related_publications: false
 project_intro: true
 repository:
   - gy-hou/chatgpt-advanced-prompts
-
 ---
 
 **[Demo](https://chatgpt-advanced-prompts-database.vercel.app/)**
