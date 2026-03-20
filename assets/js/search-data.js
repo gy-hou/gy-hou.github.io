@@ -30,40 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-stablecoins-a-comprimize-between-cryptocurrency-and-official-currency",
-        
-          title: "Stablecoins -- A comprimize between Cryptocurrency and Official Currency",
-        
-        description: "why stablecoins become viral?",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/Stablecoin/";
-          
-        },
-      },{id: "post-a-post-with-custom-blockquotes",
-        
-          title: "a post with custom blockquotes",
-        
-        description: "an example of a blog post with custom blockquotes",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/custom-blockquotes/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-        
-          title: "a post with table of contents on a sidebar",
-        
-        description: "an example of a blog post with table of contents on a sidebar",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/sidebar-table-of-contents/";
-          
-        },
-      },{id: "books-the-godfather",
+        },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
@@ -71,7 +38,12 @@ ninja.data = [{
             },},{id: "news-my-new-paper-will-publish-on-journal-this-year-sparkles-smile",
           title: 'My new Paper will publish on Journal this year :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-advanced-prompts-database",
+          section: "News",},{id: "projects-project-10",
+          title: 'project 10',
+          description: "A project with an introduction section",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_project/";
+            },},{id: "projects-advanced-prompts-database",
           title: 'Advanced-Prompts-Database',
           description: "One-Click to get your ChatGPT-database without Programming.",
           section: "Projects",handler: () => {
