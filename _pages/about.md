@@ -49,6 +49,7 @@ Applying data-driven strategies to solve complex technological problems.
 
 {% tab contact-tabs Scholar %}
 
+<p><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/" target="_blank">Google Scholar</a></p>
 <p><i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Guangyu-Hou-3" target="_blank">ResearchGate</a></p>
 <p><i class="fas fa-c"></i> <a href="https://au.cnki.net/author/personalInfo/000059735960?platform=kns-author" target="_blank">CNKI</a></p>
 {% endtab %}
