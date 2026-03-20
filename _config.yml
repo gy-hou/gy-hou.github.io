@@ -2,17 +2,17 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: G.Y. Hou | Research & Portfolio # the website title (if blank, full name will be used instead)
 first_name: G.Y.
 middle_name:
 last_name: Hou
 contact_note: >
-
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: >
+  Personal website of G.Y. Hou. Research, projects, and notes on AI, finance, analytics, and technology.
 
 footer_text: >
 
-keywords: jekyll, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: AI, finance, business analytics, fintech, research, portfolio, academic website
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎓 # the emoji or provide image name in /assets/img/)
 
@@ -62,31 +62,44 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: True # Include Open Graph meta tags in the HTML head
+serve_schema_org: True # Include Schema.org in the HTML head
+og_image: assets/img/og-preview.png
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-# For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
-# and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
-cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
-pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
-openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
+google_analytics: G-XGCNQ2550D
+cronitor_analytics:
+pirsch_analytics:
+openpanel_analytics:
 
-# For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: # your google-site-verification ID (Google Search Console)
-bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+google_site_verification: _NT8g1TJElP-5Ej0Amu0nYeuI0OHBvYD-GRNYrN-w_A
+bing_site_verification:
+
+# -----------------------------------------------------------------------------
+# Optional Features
+# -----------------------------------------------------------------------------
+
+enable_google_analytics: true
+enable_cronitor_analytics: false
+enable_pirsch_analytics: false
+enable_openpanel_analytics: false
+enable_google_verification: true
+enable_bing_verification: false
+
+
+
+
+
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
 blog_name: X notes # blog_name will be displayed in your blog page
-blog_description: Tech notes & Industry ideas & Novel minsets
+blog_description: Tech notes & Industry ideas & Novel mindsets
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -101,15 +114,15 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
-  category: Comments # name of the category under which discussions will be created
-  category_id: # leave empty or specify your category_id (see https://giscus.app/)
-  mapping: title # identify discussions by post title
-  strict: 1 # use strict identification mode
-  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
-  input_position: bottom # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
+  repo: gy-hou/gy-hou.github.io
+  repo_id: R_kgDOPMOzOg
+  category: Comments
+  category_id: DIC_kwDOPMOzOs4C44PF
+  mapping: pathname
+  strict: 1
+  reactions_enabled: 1
+  input_position: bottom
+  theme: preferred_color_scheme
   emit_metadata: 0
   lang: en
 
@@ -235,6 +248,7 @@ exclude:
   - _projects/6_project.md
   - _projects/7_project.md
   - _projects/8_project.md
+  - _projects/10_project.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -297,9 +311,10 @@ display_categories: ["external-services"] # these categories will be displayed o
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
+
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Hou]
+  first_name: [G.Y., G. Y., Guangyu, Guang-Yu]
 
   style: apa
   locale: en

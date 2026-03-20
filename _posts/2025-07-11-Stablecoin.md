@@ -5,7 +5,8 @@ date: 2025-07-11 10:14:00-0400
 description: why stablecoins become viral?
 tags: Fintech sidebar Industry-ideas
 categories: Ideas
-giscus_comments: false
+featured: true
+giscus_comments: true
 related_posts: false
 toc:
   sidebar: left

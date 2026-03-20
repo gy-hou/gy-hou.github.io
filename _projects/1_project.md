@@ -5,10 +5,13 @@ description: One-Click to get your ChatGPT-database without Programming.
 img:
 importance: 1
 category: work
+giscus_comments: true
 related_publications: false
----
+project_intro: true
+repository:
+  - gy-hou/chatgpt-advanced-prompts
 
-**[Github Repo](https://github.com/gy-hou/chatgpt-advanced-prompts)**
+---
 
 **[Demo](https://chatgpt-advanced-prompts-database.vercel.app/)**
 
