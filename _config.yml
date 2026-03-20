@@ -40,6 +40,8 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
+rss_icon: true
+
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
@@ -48,7 +50,6 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
 bib_search: true
 
 # Dimensions
@@ -147,8 +148,20 @@ collections:
     defaults:
       layout: post
     output: true
+    permalink: /:collection/:title/
   projects:
     output: true
+    permalink: /:collection/:title/
+
+announcements:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -228,7 +241,7 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives-v2
+  - jekyll-archives
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
@@ -241,7 +254,6 @@ plugins:
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-tabs
-  - jekyll-terser
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
@@ -261,16 +273,8 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  compress_javascript: false # set to false since we are using terser as the js minifier
+  compress_javascript: false
   exclude: ["robots.txt", "assets/js/search/*.js"]
-
-# -----------------------------------------------------------------------------
-# Terser
-# -----------------------------------------------------------------------------
-
-terser:
-  compress:
-    drop_console: true
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives

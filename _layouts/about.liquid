@@ -55,7 +55,7 @@ layout: default
     {% endif %}
 
     <!-- News -->
-    {% if page.announcements.enabled %}
+    {% if page.news and site.announcements.enabled %}
       <h2>News</h2>
       {% include news.liquid limit=page.announcements.limit %}
     {% endif %}
@@ -69,8 +69,8 @@ layout: default
       </div>
     {% endif %}
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
+    {% if site.newsletter.enabled and site.footer_fixed %}
+      {% include scripts/newsletter.liquid center=true %}
     {% endif %}
   </article>
 </div>
