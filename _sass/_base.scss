@@ -1085,10 +1085,15 @@ nav[data-toggle="toc"] {
     color: var(--global-text-color-light);
     text-decoration: none;
 
+    .card-title {
+      font-size: 0.95rem;
+    }
+
     .card-text {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      font-size: 0.875rem;
     }
 
     &:hover {
