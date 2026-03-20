@@ -240,6 +240,7 @@ exclude:
   - _posts/2024-04-15-pseudocode.md
   - _posts/2024-04-28-post-citation.md
   - _posts/2024-04-29-typograms.md
+  - _posts/2024-05-01-tabs.md
   # Hide specific projects
   - _projects/2_project.md
   - _projects/3_project.md
