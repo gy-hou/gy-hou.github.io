@@ -1,0 +1,19 @@
+# 小红书笔记数据（手动维护，或通过脚本定期更新）
+# url 填笔记分享链接，likes/favorites 手动同步自小红书后台
+
+notes:
+  - title: "Karpathy 启发：让 AI 自动写综述"
+    url: "http://xhslink.com/o/3J323Jsrg0G"
+    description: "TrendR — AI-powered academic survey automation"
+    likes: 182
+    favorites: 332
+    cover: ""
+    slug: "trendr"
+
+  - title: "OpenClaw进阶攻略：技能矩阵到手搓工作流"
+    url: "http://xhslink.com/o/20AfuvsAloe"
+    description: "Lucas｜AI X Fintech"
+    likes: 847
+    favorites: 1677
+    cover: ""
+    slug: "openclaw"

@@ -1,0 +1,71 @@
+<div class="repo p-2 text-center">
+  <a href="{{ include.note.url }}" target="_blank" rel="noopener noreferrer">
+
+    {%- comment -%} Light theme card {%- endcomment -%}
+    <div class="xhs-note-card repo-img-light w-100">
+      <div class="xhs-note-header">
+        <span class="xhs-badge">
+          <svg class="xhs-badge-icon" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+            <rect width="18" height="18" rx="4" fill="#FF2442"/>
+            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+              font-family="'PingFang SC','Microsoft YaHei',sans-serif"
+              font-size="7" font-weight="bold" fill="white">书</text>
+          </svg>
+          小红书
+        </span>
+        <span class="xhs-note-title">{{ include.note.title }}</span>
+      </div>
+      {% if include.note.description and include.note.description != "" %}
+      <p class="xhs-note-desc">{{ include.note.description }}</p>
+      {% endif %}
+      <div class="xhs-note-stats">
+        <span class="xhs-stat">
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          {{ include.note.likes | default: 0 }}
+        </span>
+        <span class="xhs-stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+          </svg>
+          {{ include.note.favorites | default: 0 }}
+        </span>
+      </div>
+    </div>
+
+    {%- comment -%} Dark theme card {%- endcomment -%}
+    <div class="xhs-note-card repo-img-dark w-100">
+      <div class="xhs-note-header">
+        <span class="xhs-badge">
+          <svg class="xhs-badge-icon" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+            <rect width="18" height="18" rx="4" fill="#FF2442"/>
+            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+              font-family="'PingFang SC','Microsoft YaHei',sans-serif"
+              font-size="7" font-weight="bold" fill="white">书</text>
+          </svg>
+          小红书
+        </span>
+        <span class="xhs-note-title">{{ include.note.title }}</span>
+      </div>
+      {% if include.note.description and include.note.description != "" %}
+      <p class="xhs-note-desc">{{ include.note.description }}</p>
+      {% endif %}
+      <div class="xhs-note-stats">
+        <span class="xhs-stat">
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          {{ include.note.likes | default: 0 }}
+        </span>
+        <span class="xhs-stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+          </svg>
+          {{ include.note.favorites | default: 0 }}
+        </span>
+      </div>
+    </div>
+
+  </a>
+</div>

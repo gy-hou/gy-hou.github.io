@@ -1,0 +1,52 @@
+<div class="repo p-2 text-center">
+  <a href="https://www.xiaohongshu.com/user/profile/{{ include.xhs_id }}" target="_blank" rel="noopener noreferrer">
+    <div class="xhs-card repo-img-light w-100">
+      <div class="xhs-card-inner">
+        <div class="xhs-logo-area">
+          <svg class="xhs-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="40" height="40" rx="10" fill="#FF2442"/>
+            <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+              font-family="'PingFang SC', 'Microsoft YaHei', sans-serif"
+              font-size="13" font-weight="bold" fill="white">小红书</text>
+          </svg>
+        </div>
+        <div class="xhs-info">
+          <div class="xhs-platform">小红书</div>
+          <div class="xhs-username">@{{ include.username }}</div>
+          {% if include.desc %}
+          <div class="xhs-desc">{{ include.desc }}</div>
+          {% endif %}
+        </div>
+        <div class="xhs-arrow">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="xhs-card repo-img-dark w-100">
+      <div class="xhs-card-inner">
+        <div class="xhs-logo-area">
+          <svg class="xhs-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="40" height="40" rx="10" fill="#FF2442"/>
+            <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+              font-family="'PingFang SC', 'Microsoft YaHei', sans-serif"
+              font-size="13" font-weight="bold" fill="white">小红书</text>
+          </svg>
+        </div>
+        <div class="xhs-info">
+          <div class="xhs-platform">小红书</div>
+          <div class="xhs-username">@{{ include.username }}</div>
+          {% if include.desc %}
+          <div class="xhs-desc">{{ include.desc }}</div>
+          {% endif %}
+        </div>
+        <div class="xhs-arrow">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
