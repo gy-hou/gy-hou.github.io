@@ -534,7 +534,9 @@ footer.sticky-bottom {
   padding: 12px 16px 10px;
   background-color: var(--global-card-bg-color);
   text-align: left;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 
   a:hover & {
     border-color: #ff2442;

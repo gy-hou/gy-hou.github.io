@@ -1,6 +1,5 @@
 <div class="repo p-2 text-center">
   <a href="{{ include.note.url }}" target="_blank" rel="noopener noreferrer">
-
     {%- comment -%} Light theme card {%- endcomment -%}
     <div class="xhs-note-card repo-img-light w-100">
       <div class="xhs-note-header">
@@ -15,8 +14,8 @@
         </span>
         <span class="xhs-note-title">{{ include.note.title }}</span>
       </div>
-      {% if include.note.description and include.note.description != "" %}
-      <p class="xhs-note-desc">{{ include.note.description }}</p>
+      {% if include.note.description and include.note.description != '' %}
+        <p class="xhs-note-desc">{{ include.note.description }}</p>
       {% endif %}
       <div class="xhs-note-stats">
         <span class="xhs-stat">
@@ -48,8 +47,8 @@
         </span>
         <span class="xhs-note-title">{{ include.note.title }}</span>
       </div>
-      {% if include.note.description and include.note.description != "" %}
-      <p class="xhs-note-desc">{{ include.note.description }}</p>
+      {% if include.note.description and include.note.description != '' %}
+        <p class="xhs-note-desc">{{ include.note.description }}</p>
       {% endif %}
       <div class="xhs-note-stats">
         <span class="xhs-stat">
@@ -66,6 +65,5 @@
         </span>
       </div>
     </div>
-
   </a>
 </div>

@@ -14,6 +14,7 @@ toc:
 
 {% assign xhs_note = site.data.xiaohongshu.notes | where: "slug", "openclaw" | first %}
 {% if xhs_note %}
+
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center mb-4">
   {% include xhs_note_card.liquid note=xhs_note %}
 </div>
@@ -73,6 +74,7 @@ toc:
 让它每周固定从 **Moltbook**、**EvoMap** 学习其他助理的热门帖子、技能和思路，通过 self-learning 把经验导入长期记忆。
 
 做完以上这些，日常就可以使用了。再让它打开基本设置，配置：
+
 - 显示思考过程
 - 调用工具工程
 
@@ -88,12 +90,12 @@ toc:
 
 这样做的意义：
 
-| 优势 | 说明 |
-|------|------|
-| 记忆更清晰 | 结构化沉淀，不依赖模型内存 |
-| 内容易管理 | 文件系统直接操作 |
-| 方便复用 | 跨项目调用笔记 |
-| 长期积累 | OpenClaw 负责调用，Obsidian 负责沉淀 |
+| 优势       | 说明                                 |
+| ---------- | ------------------------------------ |
+| 记忆更清晰 | 结构化沉淀，不依赖模型内存           |
+| 内容易管理 | 文件系统直接操作                     |
+| 方便复用   | 跨项目调用笔记                       |
+| 长期积累   | OpenClaw 负责调用，Obsidian 负责沉淀 |
 
 ---
 
@@ -134,17 +136,17 @@ Page-Agent 适合补网页层面的能力，处理网页任务、页面操作、
 
 Skill 更像"现成能力"，而 Plugins / MCP Server 更像"接口层"和"扩展层"。真正拉开差距的，往往不是 skill，而是接了什么外部能力。
 
-| MCP 工具 | 核心能力 |
-|----------|----------|
-| Playwright | 浏览器自动化 |
-| Firecrawl | 网页转 Markdown |
-| Scrapling | 高效网页抓取 |
-| Context7 | 深度联网搜索 |
-| n8n | 工作流自动化 |
-| TrendRadar | 全网趋势监测 |
-| Zotero | 学术文献管理 |
-| QMD | 数据内容索引 |
-| Draw.io | 专业逻辑绘图 |
+| MCP 工具   | 核心能力        |
+| ---------- | --------------- |
+| Playwright | 浏览器自动化    |
+| Firecrawl  | 网页转 Markdown |
+| Scrapling  | 高效网页抓取    |
+| Context7   | 深度联网搜索    |
+| n8n        | 工作流自动化    |
+| TrendRadar | 全网趋势监测    |
+| Zotero     | 学术文献管理    |
+| QMD        | 数据内容索引    |
+| Draw.io    | 专业逻辑绘图    |
 
 ---
 
@@ -210,4 +212,4 @@ OpenClaw（多 agents 调度）
 
 ---
 
-*外接 Plugins、连接 CLI 软件的进阶部分，另开一篇详细讲。*
+_外接 Plugins、连接 CLI 软件的进阶部分，另开一篇详细讲。_

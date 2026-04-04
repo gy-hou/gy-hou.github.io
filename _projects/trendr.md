@@ -13,6 +13,7 @@ toc:
 {% assign xhs_trendr = site.data.xiaohongshu.notes | where: "slug", "trendr" | first %}
 
 {% if xhs_trendr %}
+
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% include xhs_note_card.liquid note=xhs_trendr %}
 </div>
@@ -45,15 +46,15 @@ Inspired by [karpathy/autoresearch](https://github.com/karpathy/autoresearch) �
 
 ## What Problem It Solves
 
-| Step | Manual | TrendR |
-|------|--------|--------|
-| Cross-platform paper search | 3–4 hrs | 5 min (9 sources parallel) |
-| Filter relevant papers | 2–3 hrs | Auto score 1–5 + dedup |
-| Deep read + notes | 8–12 hrs | Structured extraction (problem / method / result / limitation) |
-| Write literature review | 6–8 hrs | Auto-generated (taxonomy + gap analysis + trends) |
-| BibTeX references | 1–2 hrs | Automatic |
-| Archive to knowledge base | 1 hr | Auto-sync to Obsidian |
-| **Total** | **~20–30 hrs** | **~30 min wait** |
+| Step                        | Manual         | TrendR                                                         |
+| --------------------------- | -------------- | -------------------------------------------------------------- |
+| Cross-platform paper search | 3–4 hrs        | 5 min (9 sources parallel)                                     |
+| Filter relevant papers      | 2–3 hrs        | Auto score 1–5 + dedup                                         |
+| Deep read + notes           | 8–12 hrs       | Structured extraction (problem / method / result / limitation) |
+| Write literature review     | 6–8 hrs        | Auto-generated (taxonomy + gap analysis + trends)              |
+| BibTeX references           | 1–2 hrs        | Automatic                                                      |
+| Archive to knowledge base   | 1 hr           | Auto-sync to Obsidian                                          |
+| **Total**                   | **~20–30 hrs** | **~30 min wait**                                               |
 
 ---
 
@@ -142,37 +143,37 @@ Notify user (Telegram / 飞书)
 
 ### Core (Basic + Full)
 
-| Type | Name | Role |
-|------|------|------|
-| Agent | `paper-scout` | 9-source search + score + dedup |
-| Agent | `paper-analyzer` | Deep read + structured notes + matrix |
-| Agent | `review-lead` | Pipeline orchestration + survey writing |
-| Agent | `verifier` | Citation validity / taxonomy consistency |
-| Skill | `paper-scout` | 9 academic API playbooks (10KB) |
-| Skill | `paper-analyzer` | Structured extraction templates |
-| Skill | `review-writer` | Survey template + quality checklist |
-| Skill | `verifier` | VERIFY rules + verify.json protocol |
-| Skill | `research-vault` | Obsidian persistence + paper pool index |
-| Skill | `trendr-watchdog` | Runtime supervision + auto-resume |
-| Skill | `platform-hotspots` | 9-platform trend scraping |
-| Skill | `chrome-cdp-setup` | Chrome 146+ CDP dual-instance + cookie sync |
-| Runtime | `engine/` | v2: state machine + validators + watchdog |
-| Runtime | `cli.py` | Standalone CLI: `run / resume / status` |
+| Type    | Name                | Role                                        |
+| ------- | ------------------- | ------------------------------------------- |
+| Agent   | `paper-scout`       | 9-source search + score + dedup             |
+| Agent   | `paper-analyzer`    | Deep read + structured notes + matrix       |
+| Agent   | `review-lead`       | Pipeline orchestration + survey writing     |
+| Agent   | `verifier`          | Citation validity / taxonomy consistency    |
+| Skill   | `paper-scout`       | 9 academic API playbooks (10KB)             |
+| Skill   | `paper-analyzer`    | Structured extraction templates             |
+| Skill   | `review-writer`     | Survey template + quality checklist         |
+| Skill   | `verifier`          | VERIFY rules + verify.json protocol         |
+| Skill   | `research-vault`    | Obsidian persistence + paper pool index     |
+| Skill   | `trendr-watchdog`   | Runtime supervision + auto-resume           |
+| Skill   | `platform-hotspots` | 9-platform trend scraping                   |
+| Skill   | `chrome-cdp-setup`  | Chrome 146+ CDP dual-instance + cookie sync |
+| Runtime | `engine/`           | v2: state machine + validators + watchdog   |
+| Runtime | `cli.py`            | Standalone CLI: `run / resume / status`     |
 
 ### Full Mode Extras
 
-| Component | Function | Without it |
-|-----------|----------|-----------|
-| Scrapling | JS-rendered page crawling | Static API only, lower coverage |
-| Zotero | Auto-import DOI to library | BibTeX still generated locally |
-| Obsidian + obsidian-cli | Paper cards + review archive + daily logs | Results saved to `~/research/` |
-| Nano-pdf | Full-text PDF reading | Abstract/metadata only |
-| Context7 | Precise library docs for codex-coder | Falls back to web search |
+| Component               | Function                                  | Without it                      |
+| ----------------------- | ----------------------------------------- | ------------------------------- |
+| Scrapling               | JS-rendered page crawling                 | Static API only, lower coverage |
+| Zotero                  | Auto-import DOI to library                | BibTeX still generated locally  |
+| Obsidian + obsidian-cli | Paper cards + review archive + daily logs | Results saved to `~/research/`  |
+| Nano-pdf                | Full-text PDF reading                     | Abstract/metadata only          |
+| Context7                | Precise library docs for codex-coder      | Falls back to web search        |
 
 ### Fallback Layer
 
-| Component | Trigger |
-|-----------|---------|
+| Component  | Trigger                                                             |
+| ---------- | ------------------------------------------------------------------- |
 | Playwright | JS rendering gaps, login-gated pages, or explicit user request only |
 
 ---
@@ -181,17 +182,17 @@ Notify user (Telegram / 飞书)
 
 All APIs are publicly free — called via `web_fetch`, no extra MCP needed.
 
-| # | Source | Coverage | Key Required |
-|---|--------|----------|-------------|
-| 1 | arXiv | CS / math / physics preprints | No |
-| 2 | Semantic Scholar | 200M+ papers, citation graph | Recommended (free) |
-| 3 | OpenAlex | 250M+ works, fully open | No |
-| 4 | PubMed | 36M+ biomedical | No |
-| 5 | CrossRef | 140M+ DOI registry | No |
-| 6 | DBLP | Computer science bibliography | No |
-| 7 | Europe PMC | 40M+ life sciences | No |
-| 8 | bioRxiv | Biology preprints | No |
-| 9 | Papers with Code | ML papers + code repos | No |
+| #   | Source           | Coverage                      | Key Required       |
+| --- | ---------------- | ----------------------------- | ------------------ |
+| 1   | arXiv            | CS / math / physics preprints | No                 |
+| 2   | Semantic Scholar | 200M+ papers, citation graph  | Recommended (free) |
+| 3   | OpenAlex         | 250M+ works, fully open       | No                 |
+| 4   | PubMed           | 36M+ biomedical               | No                 |
+| 5   | CrossRef         | 140M+ DOI registry            | No                 |
+| 6   | DBLP             | Computer science bibliography | No                 |
+| 7   | Europe PMC       | 40M+ life sciences            | No                 |
+| 8   | bioRxiv          | Biology preprints             | No                 |
+| 9   | Papers with Code | ML papers + code repos        | No                 |
 
 Agent auto-selects 3–5 most relevant sources per topic.
 
@@ -215,13 +216,13 @@ TrendR:
 
 ## Compatible Runtimes
 
-| Platform | Support | Notes |
-|----------|---------|-------|
-| **OpenClaw** | Full | Native multi-agent + browser automation |
-| **Standalone CLI** | v2 engine | `python cli.py run --topic "..." --depth B` |
-| **Claude Code** | Skills readable | via `CLAUDE.md`, `WebFetch` / `Agent` tool |
-| **Codex** | Skills readable | via `AGENTS.md`, `curl`/`fetch`, sequential |
-| **Other agents** | Skills readable | Standard Markdown, API URLs copyable |
+| Platform           | Support         | Notes                                       |
+| ------------------ | --------------- | ------------------------------------------- |
+| **OpenClaw**       | Full            | Native multi-agent + browser automation     |
+| **Standalone CLI** | v2 engine       | `python cli.py run --topic "..." --depth B` |
+| **Claude Code**    | Skills readable | via `CLAUDE.md`, `WebFetch` / `Agent` tool  |
+| **Codex**          | Skills readable | via `AGENTS.md`, `curl`/`fetch`, sequential |
+| **Other agents**   | Skills readable | Standard Markdown, API URLs copyable        |
 
 ---
 
@@ -229,11 +230,11 @@ TrendR:
 
 When using non-frontier models (e.g. MiniMax M2.5), agents may skip reading Skill files. TrendR uses a 3-layer defense:
 
-| Layer | Mechanism |
-|-------|-----------|
+| Layer       | Mechanism                                                                   |
+| ----------- | --------------------------------------------------------------------------- |
 | `AGENTS.md` | Hard rule: "task description must include 'read skills/xxx/SKILL.md first'" |
-| `SOUL.md` | Top warning: "⚠️ Step 1: read skills/xxx/SKILL.md" |
-| `SKILL.md` | Complete copy-paste commands, not abstract instructions |
+| `SOUL.md`   | Top warning: "⚠️ Step 1: read skills/xxx/SKILL.md"                          |
+| `SKILL.md`  | Complete copy-paste commands, not abstract instructions                     |
 
 ---
 
