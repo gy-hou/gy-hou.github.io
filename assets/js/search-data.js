@@ -43,6 +43,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-trendr",
+          title: 'TrendR',
+          description: "Trend Research — Automated literature review + platform trend monitoring + Obsidian knowledge management.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/trendr/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
