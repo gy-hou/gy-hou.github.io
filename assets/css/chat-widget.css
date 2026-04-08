@@ -2,8 +2,9 @@
 
 #ai-chat-wrapper {
   position: fixed;
-  bottom: 1.5rem;
+  top: 50%;
   right: 1.5rem;
+  transform: translateY(-50%);
   z-index: 3;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -41,10 +42,13 @@
 #ai-chat-panel {
   display: none;
   flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 360px;
   max-width: calc(100vw - 2rem);
   height: 480px;
-  max-height: calc(100vh - 6rem);
+  max-height: calc(50vh + 240px);
   border-radius: 16px;
   background: var(--global-bg-color, #fff);
   border: 1px solid var(--global-divider-color, #e0e0e0);
@@ -161,14 +165,33 @@ html[data-theme="dark"] #ai-chat-panel {
 }
 
 @media screen and (max-width: 576px) {
-  #ai-chat-panel {
-    width: calc(100vw - 2rem);
-    height: calc(100vh - 8rem);
-    border-radius: 16px 16px 0 0;
+  #ai-chat-wrapper {
+    top: auto;
+    bottom: 5rem;
+    right: 0.75rem;
+    transform: none;
   }
 
-  #ai-chat-wrapper {
+  #ai-chat-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  #ai-chat-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  #ai-chat-panel {
+    position: fixed;
+    top: 1rem;
     bottom: 1rem;
-    right: 1rem;
+    right: 0.5rem;
+    left: 0.5rem;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    border-radius: 16px;
   }
 }
