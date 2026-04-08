@@ -19,11 +19,11 @@ repository:
 
 ## What's Inside
 
-| Category | Description |
-| --- | --- |
-| AI Tools | Curated reviews and usage guides for popular AI applications |
-| Prompts | Ready-to-use prompt templates for various LLM tasks |
-| Agent Skills | Reusable skill definitions and workflows for AI agents |
+| Category     | Description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| AI Tools     | Curated reviews and usage guides for popular AI applications |
+| Prompts      | Ready-to-use prompt templates for various LLM tasks          |
+| Agent Skills | Reusable skill definitions and workflows for AI agents       |
 
 ## Motivation
 
