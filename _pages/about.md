@@ -16,7 +16,7 @@ social: false
 
 <div class="hero-links">
   <a href="mailto:houguangyu@ustc.edu"><i class="fa-solid fa-envelope"></i> Email</a>
-  <a href="{{ '/assets/pdf/cv.pdf' | relative_url }}"><i class="fa-solid fa-file"></i> CV</a>
+  <a href="https://gy-hou.github.io/cv/"><i class="fa-solid fa-file"></i> CV</a>
   <a href="https://scholar.google.com/" target="_blank"><i class="ai ai-google-scholar"></i> Scholar</a>
   <a href="https://github.com/gy-hou" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
 </div>

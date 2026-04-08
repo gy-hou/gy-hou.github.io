@@ -45,8 +45,13 @@ pagination:
         <p>&bull;</p>
       {% endif %}
       {% for category in site.display_categories %}
+        {% assign category_slug = category | slugify %}
+        {% assign category_href = category_slug | prepend: '/blog/category/' | relative_url %}
+        {% if category_slug == 'external-services' %}
+          {% assign category_href = '/openresource-wiki/' | relative_url %}
+        {% endif %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category_href }}">{{ category }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -165,7 +170,12 @@ pagination:
           {% if categories != "" %}
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
+            {% assign category_slug = category | slugify %}
+            {% assign category_href = category_slug | prepend: '/blog/category/' | prepend: site.baseurl %}
+            {% if category_slug == 'external-services' %}
+              {% assign category_href = '/openresource-wiki/' | prepend: site.baseurl %}
+            {% endif %}
+            <a href="{{ category_href }}">
               <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
               {% unless forloop.last %}
                 &nbsp;
