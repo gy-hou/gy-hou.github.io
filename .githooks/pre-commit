@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! command -v npx >/dev/null 2>&1; then
+  echo "[pre-commit] npx not found, skipping Prettier."
+  exit 0
+fi
+
+staged_files=()
+while IFS= read -r -d '' file; do
+  staged_files+=("$file")
+done < <(git diff --cached --name-only --diff-filter=ACMR -z)
+
+if [ ${#staged_files[@]} -eq 0 ]; then
+  exit 0
+fi
+
+format_targets=()
+for file in "${staged_files[@]}"; do
+  if [ -f "$file" ]; then
+    case "$file" in
+      *.md | *.mdx | *.html | *.liquid | *.css | *.scss | *.js | *.jsx | *.ts | *.tsx | *.json | *.yml | *.yaml)
+        format_targets+=("$file")
+        ;;
+    esac
+  fi
+done
+
+if [ ${#format_targets[@]} -eq 0 ]; then
+  exit 0
+fi
+
+echo "[pre-commit] Formatting staged files with Prettier..."
+npx prettier --write "${format_targets[@]}"
+git add "${format_targets[@]}"
