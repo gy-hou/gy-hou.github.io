@@ -1701,7 +1701,38 @@ main div:not(.profile):not(.card):not(.navbar) {
 
 // Specific styling for about page main content
 .post article p {
-  margin-bottom: 1.2rem; // 增加段落间距
+  margin-bottom: 1.2rem;
   line-height: 1.8;
   letter-spacing: 0.3px;
+}
+
+// Hero links bar on academic homepage
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--global-text-color);
+    text-decoration: none;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-bottom-color: var(--global-theme-color);
+      text-decoration: none;
+    }
+
+    i {
+      font-size: 0.9rem;
+      color: var(--global-theme-color);
+    }
+  }
 }

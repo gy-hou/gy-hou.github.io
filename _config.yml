@@ -2,17 +2,19 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: G.Y. Hou | Research & Portfolio # the website title (if blank, full name will be used instead)
-first_name: G.Y.
+title: blank # renders as bold first_name + last_name
+first_name: Guangyu
 middle_name:
 last_name: Hou
+email: houguangyu@ustc.edu
+github_username: gy-hou
 contact_note: >
 description: >
-  Personal website of G.Y. Hou. Research, projects, and notes on AI, finance, analytics, and technology.
+  Academic homepage of Guangyu Hou. Research on reinforcement learning, machine learning, and NLP in financial markets.
 
 footer_text: >
 
-keywords: AI, finance, business analytics, fintech, research, portfolio, academic website
+keywords: reinforcement learning, machine learning, fintech, financial analytics, NLP, academic
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎓 # the emoji or provide image name in /assets/img/)
 
@@ -157,9 +159,9 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false # blog posts accessible via nav, not shown on homepage
+  scrollable: true
+  limit: 3
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
