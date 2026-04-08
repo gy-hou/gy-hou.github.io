@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "OpenClaw 新手到高阶全攻略：技能矩阵到手搓工作流"
+title: "From Novice to Advanced in OpenClaw: Skill Matrix Design and Custom Workflow Engineering"
 date: 2026-04-04 10:00:00+0800
-description: 从记忆结构优化、技能矩阵配置，到手搓专属工作流，一步一步带你从新手到高阶。
-tags: AI workflow OpenClaw tools
+description: A structured guide to memory architecture optimization, skill matrix validation, and domain-specific workflow engineering in OpenClaw.
+tags: AI workflow OpenClaw MCP systems
 categories: AI
 featured: false
 giscus_comments: true
@@ -16,200 +16,200 @@ toc:
 {% if xhs_note %}
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center mb-4">
-  {% include xhs_note_card.liquid note=xhs_note %}
+{% include xhs_note_card.liquid note=xhs_note %}
 </div>
 {% endif %}
 
-> **适用范围**：帮助安装了 OpenClaw 却不知道怎么优化记忆、装技能和 MCP 的用户。从新手到进阶，再到手搓专属工作流。
+> **Scope:** This guide is intended for users who have installed OpenClaw but need a rigorous path for memory optimization, skill governance, MCP integration, and custom workflow construction.
 
 ---
 
-## 基础篇：最重要的三件事
+## Foundational Layer: Core System Preparation
 
-### 1. 优化记忆结构
+### 1. Optimize the Memory Architecture
 
-先下载 `tree`，把工作区目录结构打印出来，发给 Claude 或 GPT，让它帮你梳理记忆结构、目录层级和文件组织方式。
+Install `tree`, export the workspace hierarchy, and provide the resulting structure to your assistant for architecture-level review. The objective is to formalize directory roles, retention priorities, and memory boundaries.
 
-提以下需求：
+Recommended instruction template:
 
 ```
-帮我优化记忆结构和层级（并标注重要性，5⭐）：
-- 哪些内容该长期保留
-- 哪些内容该拆分
-- 哪些内容该放进短期 / 长期记忆结构里
+Optimize the memory hierarchy and assign explicit priority levels (5-star scale):
+- Which artifacts should be retained in long-term memory?
+- Which artifacts should be decomposed into smaller units?
+- Which artifacts belong to short-term vs. long-term memory?
 ```
 
-> 先把记忆结构理顺，后面很多事都会顺。
+Well-structured memory design reduces downstream friction in retrieval, indexing, and automation.
 
 ---
 
-### 2. 技能矩阵存入长期记忆
+### 2. Persist the Skill Matrix in Long-Term Memory
 
-让它生成自己的**技能矩阵**并保存在长期记忆里。做 Agents 时，可以强制把矩阵写入元数据，确保技能被调用。
+Generate an explicit **skill matrix** and store it in long-term memory. In multi-agent settings, enforce matrix references in metadata so required skills are consistently invoked.
 
-几个关键点：
+Validation principles:
 
-- 不要只看"装上了没有"，要**一个个测试**
-- 在 UI 界面里，尽量让所有技能都变成 `eligible`
-- 这一步解决的是 AI 的遗忘机制问题
-
----
-
-### 3. 安装技能 & 安全筛查
-
-安装 **skill-vetter** 提升安全系数，再去 ClawHub 按需找技能。
-
-注意事项：
-
-- 下载量少的技能要么别碰，要么自己审核
-- 一次只装少量，先验证再扩展
-- 下载不了（超 rate）时，直接 unzip 到本地，让助手自己配置
-
-> 技能不是越多越强，甚至可能越多越笨。能融进你的工作流才有意义。
+- Do not evaluate by installation status alone; test each skill operationally.
+- In the UI, maximize the number of skills marked `eligible`.
+- This step mitigates model-level forgetting and inconsistent tool selection.
 
 ---
 
-### 4. 开启自学习
+### 3. Install Skills with Security Screening
 
-让它每周固定从 **Moltbook**、**EvoMap** 学习其他助理的热门帖子、技能和思路，通过 self-learning 把经验导入长期记忆。
+Use **skill-vetter** as a first-line control, then install domain-relevant skills from ClawHub.
 
-做完以上这些，日常就可以使用了。再让它打开基本设置，配置：
+Operational safeguards:
 
-- 显示思考过程
-- 调用工具工程
+- Avoid low-adoption skills unless you can audit them manually.
+- Install in small batches, validate, then expand.
+- If rate-limited, unzip locally and let the assistant complete configuration.
 
-出了问题可以从这里排查错误。之后 GitHub 上各种有意思的项目直接发给助手让它跑，不用自己头疼怎么用。
-
----
-
-## 进阶篇：扩展外部能力
-
-### 外置记忆库：接入 Obsidian
-
-当你开始认真用 OpenClaw，你会发现单靠内部记忆已经不够了。这时候可以把 **Obsidian** 接进来，把它当成外置的长期知识库。
-
-这样做的意义：
-
-| 优势       | 说明                                 |
-| ---------- | ------------------------------------ |
-| 记忆更清晰 | 结构化沉淀，不依赖模型内存           |
-| 内容易管理 | 文件系统直接操作                     |
-| 方便复用   | 跨项目调用笔记                       |
-| 长期积累   | OpenClaw 负责调用，Obsidian 负责沉淀 |
+Skill count is not a performance metric; integration quality within your workflow is.
 
 ---
 
-### 网页能力提升
+### 4. Enable Scheduled Self-Learning
 
-**第一步：用 Scrapping 补搜索短板**
+Schedule weekly ingestion from **Moltbook** and **EvoMap** to capture high-performing posts, methods, and skill patterns, then write these findings into long-term memory.
 
-很多时候，OpenClaw 的问题不是"不会想"，而是"拿不到足够多的信息"。Scrapping 的意义在于网页版 AI 全都无法实现它的功能。
+Then enable baseline diagnostics:
 
-**第二步：利用好阿里的 Page-Agent**
+- Visible reasoning traces
+- Tool orchestration mode
 
-Page-Agent 适合补网页层面的能力，处理网页任务、页面操作、页面理解时表现很好。
-
----
-
-### 建立本地索引
-
-当外置记忆库超过 **200G** 时，需要用 **QMD MCP** 建立索引：
-
-- **低配方案**：Embedding + Gemini 免费 API
-- **高配方案**：混合语义搜索小模型（注意：会占用约 2GB 内存）
+These settings improve observability and make failure analysis significantly easier.
 
 ---
 
-### 定期更新技能
+## Intermediate Layer: External Capability Expansion
 
-针对自己的领域，定期从 `awesome-openclaw-skills` 找适合的 skills：
+### External Memory: Integrate Obsidian
 
-- 做科研 → 找科研相关技能
-- 做内容 → 找内容相关技能
-- 做自动化 → 找自动化相关技能
+At scale, internal memory alone is insufficient. Integrating **Obsidian** provides a stable external knowledge base with explicit file-system semantics.
 
-> OpenClaw 最后一定走向**垂直化**，而不是全能化。
+Practical benefits:
 
----
-
-### 核心 MCP 推荐
-
-Skill 更像"现成能力"，而 Plugins / MCP Server 更像"接口层"和"扩展层"。真正拉开差距的，往往不是 skill，而是接了什么外部能力。
-
-| MCP 工具   | 核心能力        |
-| ---------- | --------------- |
-| Playwright | 浏览器自动化    |
-| Firecrawl  | 网页转 Markdown |
-| Scrapling  | 高效网页抓取    |
-| Context7   | 深度联网搜索    |
-| n8n        | 工作流自动化    |
-| TrendRadar | 全网趋势监测    |
-| Zotero     | 学术文献管理    |
-| QMD        | 数据内容索引    |
-| Draw.io    | 专业逻辑绘图    |
+| Advantage | Description |
+| --------- | ----------- |
+| Memory clarity | Structured persistence independent of model context |
+| Manageability | Direct manipulation via file-system operations |
+| Reusability | Cross-project note reuse |
+| Long-term accumulation | OpenClaw orchestrates; Obsidian persists |
 
 ---
 
-### 外接 Claude Code / Codex
+### Web Capability Enhancement
 
-这一步很关键。OpenClaw 负责调度、记忆和流程；Claude Code / Codex 负责更强的编码与执行。
+**Step 1: Use Scrapping to address retrieval gaps**
 
-> 让最会做流程的去做流程，让最会写代码的去写代码。
+In many cases, performance bottlenecks arise from insufficient retrieval rather than weak reasoning. Scrapping improves data acquisition where browser-only assistants are limited.
 
----
+**Step 2: Use Alibaba Page-Agent for web interaction tasks**
 
-## 高阶篇：手搓专属工作流
-
-### 1. 先分析真实需求，再做逻辑链
-
-到了高阶阶段，最忌讳犯懒。需求越特殊，通用技能越不够用。
-
-第一步永远不是"先装"，而是想清楚：
-
-1. 我要解决什么问题？
-2. 这个问题的逻辑链是什么？
-3. 哪些环节可以自动化？
-4. 哪些环节必须自己把关？
-
-> 先有逻辑链，再有工作流。
+Page-Agent is effective for page-level execution, manipulation, and contextual understanding.
 
 ---
 
-### 2. 让 Claude 指导你手搓
+### Build Local Indexes for Large Knowledge Bases
 
-越特殊的需求，越不要期待"现成插件一键解决"。有效的方式是：
+When external memory exceeds **200 GB**, index it via **QMD MCP**:
 
-1. 把逻辑链想清楚
-2. 让 Claude 帮你拆流程
-3. 自己一步步手搓出来
-
-需求越独特，越不能偷懒。
+- **Resource-constrained setup:** embeddings + Gemini free API
+- **High-performance setup:** hybrid semantic retrieval models (approximately 2 GB memory overhead)
 
 ---
 
-### 3. 实战案例：TrendR
+### Maintain Domain-Specific Skill Updates
 
-分享我自己搭的一个学术技能 **TrendR**，核心逻辑链：
+Curate skills regularly from `awesome-openclaw-skills` according to domain:
+
+- Research workflows -> research-oriented skills
+- Content workflows -> content-generation skills
+- Automation workflows -> orchestration and execution skills
+
+Long-term performance is driven by specialization rather than generic breadth.
+
+---
+
+### Recommended MCP Stack
+
+Skills provide packaged capabilities, while Plugins and MCP servers define interface and extension layers. In practice, external system integration often drives the largest performance gains.
+
+| MCP Tool | Core Capability |
+| -------- | --------------- |
+| Playwright | Browser automation |
+| Firecrawl  | Web-to-Markdown transformation |
+| Scrapling  | High-efficiency scraping |
+| Context7   | Deep web retrieval |
+| n8n        | Workflow automation |
+| TrendRadar | Cross-platform trend monitoring |
+| Zotero     | Scholarly reference management |
+| QMD        | Content indexing |
+| Draw.io    | Formal diagram generation |
+
+---
+
+### Couple OpenClaw with Claude Code or Codex
+
+This integration is high leverage: OpenClaw handles orchestration, memory, and process control; Claude Code or Codex handles high-precision coding and execution.
+
+Use role-specialized systems for role-specialized tasks.
+
+---
+
+## Advanced Layer: Build Custom Workflows
+
+### 1. Model the Real Requirement Before Tooling
+
+At advanced stages, generic templates are often insufficient. Distinct requirements demand explicit logic-chain design.
+
+Before installation, formalize:
+
+1. What exact problem is being solved?
+2. What is the end-to-end reasoning and execution chain?
+3. Which segments are automatable?
+4. Which segments require human verification?
+
+Workflow quality follows logic-chain quality.
+
+---
+
+### 2. Use Claude for Guided Decomposition
+
+For specialized tasks, one-click plugins are rarely sufficient. A robust procedure is:
+
+1. Define the logic chain precisely.
+2. Ask Claude to decompose each stage.
+3. Implement and validate each stage iteratively.
+
+The more unique the requirement, the greater the need for manual rigor.
+
+---
+
+### 3. Case Study: TrendR Academic Skill Pipeline
+
+Below is a representative chain for **TrendR**:
 
 ```
-搜论文 → 去重/评分 → 精读提取 → 生成综述
-       → 整理参考文献 → 持久化知识库 → 持续迭代
+Paper Retrieval -> Deduplication/Scoring -> Deep Extraction -> Review Synthesis
+               -> Reference Structuring -> Persistent Knowledge Base -> Continuous Iteration
 ```
 
-**完整工作流：**
+**System composition:**
 
 ```
-OpenClaw（多 agents 调度）
-  ├── Scrapling MCP（辅助搜索）
-  ├── 9 Source（主搜索）
-  ├── Obsidian（知识沉淀）
-  ├── QMD（混合语义搜索）
-  ├── Zotero（文献管理）
-  └── Nano-PDF（PDF 精读）
+OpenClaw (multi-agent orchestration)
+  ├── Scrapling MCP (auxiliary retrieval)
+  ├── 9 Source (primary retrieval)
+  ├── Obsidian (knowledge persistence)
+  ├── QMD (hybrid semantic retrieval)
+  ├── Zotero (reference management)
+  └── Nano-PDF (deep PDF reading)
 ```
 
-这套组合不是堆工具，而是**按工作流每一步选最优工具**。
+This architecture is not tool accumulation; it is step-wise tool optimization aligned to workflow objectives.
 
 ---
 
-_外接 Plugins、连接 CLI 软件的进阶部分，另开一篇详细讲。_
+_A dedicated follow-up article can cover advanced plugin wiring and CLI-level integration patterns._
