@@ -16,7 +16,7 @@
     '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>' +
     '<div id="ai-chat-panel">' +
     '<div id="ai-chat-header">' +
-    '<span>AI Assistant</span>' +
+    "<span>AI Assistant</span>" +
     '<button id="ai-chat-close">&times;</button></div>' +
     '<div id="ai-chat-messages"></div>' +
     '<div id="ai-chat-input-row">' +
@@ -70,7 +70,9 @@
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ messages: messages }),
     })
-      .then(function (r) { return r.json(); })
+      .then(function (r) {
+        return r.json();
+      })
       .then(function (data) {
         var reply = data.reply || data.error || "Sorry, something went wrong.";
         removeMsg(typingId);
