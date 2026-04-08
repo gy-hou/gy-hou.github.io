@@ -2,9 +2,8 @@
 
 #ai-chat-wrapper {
   position: fixed;
-  top: 50%;
-  right: 1.5rem;
-  transform: translateY(-50%);
+  bottom: 30px;
+  left: 30px;
   z-index: 3;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -44,11 +43,11 @@
   flex-direction: column;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 360px;
   max-width: calc(100vw - 2rem);
   height: 480px;
-  max-height: calc(50vh + 240px);
+  max-height: calc(100vh - 100px);
   border-radius: 16px;
   background: var(--global-bg-color, #fff);
   border: 1px solid var(--global-divider-color, #e0e0e0);
@@ -112,13 +111,14 @@
 
 .ai-chat-assistant {
   align-self: flex-start;
-  background: var(--global-hover-color, #f0f0f0);
-  color: var(--global-text-color, #333);
+  background: #f0f0f0;
+  color: #333;
   border-bottom-left-radius: 4px;
 }
 
 html[data-theme="dark"] .ai-chat-assistant {
-  background: rgba(255, 255, 255, 0.08);
+  background: #2a2a2a;
+  color: #e0e0e0;
 }
 
 html[data-theme="dark"] #ai-chat-panel {
@@ -166,10 +166,8 @@ html[data-theme="dark"] #ai-chat-panel {
 
 @media screen and (max-width: 576px) {
   #ai-chat-wrapper {
-    top: auto;
     bottom: 5rem;
-    right: 0.75rem;
-    transform: none;
+    left: 0.75rem;
   }
 
   #ai-chat-btn {
@@ -184,14 +182,13 @@ html[data-theme="dark"] #ai-chat-panel {
 
   #ai-chat-panel {
     position: fixed;
-    top: 1rem;
-    bottom: 1rem;
-    right: 0.5rem;
+    bottom: 4.5rem;
     left: 0.5rem;
+    right: 0.5rem;
     width: auto;
-    height: auto;
+    height: 50vh;
     max-width: none;
-    max-height: none;
+    max-height: 50vh;
     border-radius: 16px;
   }
 }

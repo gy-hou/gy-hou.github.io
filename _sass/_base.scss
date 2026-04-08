@@ -520,6 +520,26 @@ footer.sticky-bottom {
 
 // Repositories
 
+.repo {
+  border-radius: 8px;
+  overflow: hidden;
+  transition:
+    box-shadow 0.2s ease;
+
+  img {
+    border-radius: 8px;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+html[data-theme="dark"] .repo .repo-img-dark {
+  filter: invert(1) hue-rotate(180deg);
+  opacity: 0.9;
+}
+
 @media (min-width: 768px) {
   .repo {
     max-width: 50%;
