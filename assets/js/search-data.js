@@ -38,9 +38,9 @@ ninja.data = [{
           description: "One-Click to get your ChatGPT-database without Programming.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+            },},{id: "projects-learn-english-skill-for-agents",
+          title: 'learn-english skill for agents',
+          description: "A prompt-engineered framework for vocabulary memorization, sentence analysis, and collaborative corpus building.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{id: "projects-trendr",
