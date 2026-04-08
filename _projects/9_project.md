@@ -22,14 +22,14 @@ If you have a GPT-4 Plus account, you are invited to contribute by uploading you
 
 ## System Modules
 
-| Module | Function |
-| ------ | -------- |
+| Module                        | Function                                              |
+| ----------------------------- | ----------------------------------------------------- |
 | Sentence Analyze (2024-04-06) | Structured analysis of sentence grammar and semantics |
-| Chinese Version | Chinese instructional prompt set |
-| English Version | English instructional prompt set |
-| Result-EnglishVersion | Output archive for English-mode responses |
-| Result-ChineseVersion | Output archive for Chinese-mode responses |
-| Partial Result | Demonstration subset for quick inspection |
+| Chinese Version               | Chinese instructional prompt set                      |
+| English Version               | English instructional prompt set                      |
+| Result-EnglishVersion         | Output archive for English-mode responses             |
+| Result-ChineseVersion         | Output archive for Chinese-mode responses             |
+| Partial Result                | Demonstration subset for quick inspection             |
 
 The demonstration output is designed for direct migration into spaced-repetition tools (e.g., Anki), where mnemonic variants can be reviewed as cards.
 

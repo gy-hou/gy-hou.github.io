@@ -90,12 +90,12 @@ At scale, internal memory alone is insufficient. Integrating **Obsidian** provid
 
 Practical benefits:
 
-| Advantage | Description |
-| --------- | ----------- |
-| Memory clarity | Structured persistence independent of model context |
-| Manageability | Direct manipulation via file-system operations |
-| Reusability | Cross-project note reuse |
-| Long-term accumulation | OpenClaw orchestrates; Obsidian persists |
+| Advantage              | Description                                         |
+| ---------------------- | --------------------------------------------------- |
+| Memory clarity         | Structured persistence independent of model context |
+| Manageability          | Direct manipulation via file-system operations      |
+| Reusability            | Cross-project note reuse                            |
+| Long-term accumulation | OpenClaw orchestrates; Obsidian persists            |
 
 ---
 
@@ -136,17 +136,17 @@ Long-term performance is driven by specialization rather than generic breadth.
 
 Skills provide packaged capabilities, while Plugins and MCP servers define interface and extension layers. In practice, external system integration often drives the largest performance gains.
 
-| MCP Tool | Core Capability |
-| -------- | --------------- |
-| Playwright | Browser automation |
-| Firecrawl  | Web-to-Markdown transformation |
-| Scrapling  | High-efficiency scraping |
-| Context7   | Deep web retrieval |
-| n8n        | Workflow automation |
+| MCP Tool   | Core Capability                 |
+| ---------- | ------------------------------- |
+| Playwright | Browser automation              |
+| Firecrawl  | Web-to-Markdown transformation  |
+| Scrapling  | High-efficiency scraping        |
+| Context7   | Deep web retrieval              |
+| n8n        | Workflow automation             |
 | TrendRadar | Cross-platform trend monitoring |
-| Zotero     | Scholarly reference management |
-| QMD        | Content indexing |
-| Draw.io    | Formal diagram generation |
+| Zotero     | Scholarly reference management  |
+| QMD        | Content indexing                |
+| Draw.io    | Formal diagram generation       |
 
 ---
 
