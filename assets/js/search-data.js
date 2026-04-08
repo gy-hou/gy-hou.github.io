@@ -30,8 +30,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "news-my-new-paper-will-publish-sooner-sparkles-smile",
-          title: 'My new Paper will publish sooner :sparkles: :smile:',
+        },{id: "news-redesigned-academic-homepage-with-a-clearer-research-focus-on-rl-ml-and-nlp-in-financial-markets",
+          title: 'Redesigned academic homepage with a clearer research focus on RL, ML, and NLP...',
           description: "",
           section: "News",},{id: "projects-advanced-prompts-database",
           title: 'Advanced-Prompts-Database',
