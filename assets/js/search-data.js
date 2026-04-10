@@ -42,7 +42,7 @@ ninja.data = [{
           title: 'learn-english skill for agents',
           description: "A prompt-engineered framework for vocabulary memorization, sentence analysis, and collaborative corpus building.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/learn-english-skill-for-agents/";
             },},{id: "projects-openresource-wiki",
           title: 'OpenResource Wiki',
           description: "An open-source knowledge base for AI tools, prompts, and agent skills — shared via Xiaohongshu and GitHub.",
