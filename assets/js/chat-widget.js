@@ -3,8 +3,8 @@
  * Floating chat button -> expandable panel -> calls Cloudflare Worker
  */
 (function () {
-  var SITE_MODE = detectSiteMode();
-  var SITE_CONFIG = getSiteConfig(SITE_MODE);
+  var SITE_MODE = "academic";
+  var SITE_CONFIG = getSiteConfig();
 
   var messages = [];
   var isOpen = false;
@@ -73,14 +73,13 @@
     appendMsg("user", text);
     messages.push({ role: "user", content: text });
 
-    var responseLanguage = resolveResponseLanguage(text);
-    var requestMessages = [{ role: "system", content: buildSystemPrompt(responseLanguage) }].concat(messages);
+    var responseLanguage = SITE_CONFIG.defaultLanguage;
     var typingId = appendMsg("assistant", SITE_CONFIG.ui.thinking);
 
     requestReply({
       site_mode: SITE_MODE,
       response_language: responseLanguage,
-      messages: requestMessages,
+      messages: messages,
     })
       .then(function (data) {
         var reply = data.reply || data.error || SITE_CONFIG.ui.fallbackError;
@@ -95,12 +94,7 @@
   }
 
   function requestReply(payload) {
-    return postToWorker(SITE_CONFIG.workerUrl, payload).catch(function () {
-      if (SITE_CONFIG.fallbackWorkerUrl && SITE_CONFIG.fallbackWorkerUrl !== SITE_CONFIG.workerUrl) {
-        return postToWorker(SITE_CONFIG.fallbackWorkerUrl, payload);
-      }
-      throw new Error("worker_request_failed");
-    });
+    return postToWorker(SITE_CONFIG.workerUrl, payload);
   }
 
   function postToWorker(url, payload) {
@@ -116,89 +110,24 @@
     });
   }
 
-  function resolveResponseLanguage(text) {
-    if (SITE_CONFIG.languageMode === "fixed") {
-      return SITE_CONFIG.defaultLanguage;
-    }
-    return detectUserLanguage(text);
-  }
-
-  function buildSystemPrompt(responseLanguage) {
-    if (SITE_MODE === "wiki") {
-      var wikiLanguageRule =
-        responseLanguage === "en" ? "The user asked in English, so answer in English for this turn." : "Reply in Simplified Chinese for this turn.";
-      return [
-        "You are the AI assistant for OpenResource Wiki.",
-        "Focus on AI tools, prompt engineering, and resource navigation on this wiki.",
-        wikiLanguageRule,
-        "If information is unavailable, say so clearly instead of fabricating details.",
-      ].join(" ");
-    }
-
-    return [
-      "You are the AI assistant for Lucas Hou's academic homepage.",
-      "Focus on research, publications, projects, and profile information from this site.",
-      "Always answer in English only.",
-      "If information is unavailable, say so clearly instead of fabricating details.",
-    ].join(" ");
-  }
-
-  function detectUserLanguage(text) {
-    if (!text) return SITE_CONFIG.defaultLanguage;
-    var cjkCount = (text.match(/[\u3400-\u9fff]/g) || []).length;
-    var latinCount = (text.match(/[A-Za-z]/g) || []).length;
-    if (cjkCount > latinCount) return "zh";
-    if (latinCount > 0) return "en";
-    return SITE_CONFIG.defaultLanguage;
-  }
-
-  function detectSiteMode() {
-    var host = (window.location.hostname || "").toLowerCase();
-    var path = window.location.pathname || "/";
-    if (host.indexOf("openresource-wiki") !== -1 || path === "/openresource-wiki" || path.indexOf("/openresource-wiki/") === 0) {
-      return "wiki";
-    }
-    return "academic";
-  }
-
-  function getSiteConfig(mode) {
-    var configs = {
-      academic: {
-        workerUrl: "https://academic-ai-chat.hougarry.workers.dev",
-        fallbackWorkerUrl: "https://wiki-ai-chat.hougarry.workers.dev",
-        defaultLanguage: "en",
-        languageMode: "fixed",
-        ui: {
-          title: "AI Assistant",
-          placeholder: "Ask me anything...",
-          send: "Send",
-          welcome: "Hi! I'm the AI assistant for this site. Feel free to ask about my research, projects, or anything on this page.",
-          thinking: "Thinking...",
-          networkError: "Network error. Please try again.",
-          fallbackError: "Sorry, something went wrong.",
-        },
-      },
-      wiki: {
-        workerUrl: "https://wiki-ai-chat.hougarry.workers.dev",
-        fallbackWorkerUrl: "",
-        defaultLanguage: "zh",
-        languageMode: "follow-user",
-        ui: {
-          title: "AI 助手",
-          placeholder: "欢迎提问...",
-          send: "发送",
-          welcome: "你好！我是本站 AI 助手，可以帮你快速查找和整理内容。",
-          thinking: "思考中...",
-          networkError: "网络错误，请稍后再试。",
-          fallbackError: "抱歉，暂时无法回答这个问题。",
-        },
+  function getSiteConfig() {
+    var selected = {
+      workerUrl: "https://academic-ai-chat.hougarry.workers.dev",
+      defaultLanguage: "en",
+      ui: {
+        title: "AI Assistant",
+        placeholder: "Ask me anything...",
+        send: "Send",
+        welcome: "Hi! I'm the AI assistant for this site. Feel free to ask about my research, projects, or anything on this page.",
+        thinking: "Thinking...",
+        networkError: "Network error. Please try again.",
+        fallbackError: "Sorry, something went wrong.",
       },
     };
 
-    var selected = configs[mode] || configs.academic;
     var workerOverrides = window.__AI_CHAT_WORKERS__;
-    if (workerOverrides && workerOverrides[mode]) {
-      selected.workerUrl = workerOverrides[mode];
+    if (workerOverrides && workerOverrides.academic) {
+      selected.workerUrl = workerOverrides.academic;
     }
 
     return selected;
