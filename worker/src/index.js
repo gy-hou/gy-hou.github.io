@@ -10,19 +10,22 @@
  *   ACADEMIC_CONTEXT_URL (optional)
  */
 
-const ACADEMIC_PROMPT = `You are the AI assistant for Lucas Hou's academic homepage (gy-hou.github.io).
+const MODEL = "deepseek-flash";
+const MAX_USER_TURNS = 30;
+const MAX_MESSAGES = MAX_USER_TURNS * 2;
+const CONTEXT_CACHE_TTL_MS = 10 * 60 * 1000;
+const MAX_CONTEXT_CHARS = 30000;
+const TURN_LIMIT_REPLY = `This conversation has reached its ${MAX_USER_TURNS}-message limit. Refresh the page to start a new one. 本次对话已达 ${MAX_USER_TURNS} 条上限，刷新页面即可重新开始。`;
+
+const ACADEMIC_PROMPT = `You are the AI assistant on the academic homepage of Guangyu Hou (English name: Lucas), gy-hou.github.io. You run on DeepSeek's ${MODEL} model.
 
 Rules:
-- Reply in English only.
-- Focus on on-site information: profile, projects, publications, CV, and blog updates.
-- If information is unavailable on the site, say so clearly instead of guessing.
+- Reply in the language the visitor writes in.
+- Focus on on-site information: profile, education, projects, publications, and blog updates.
+- The on-site index below is your only source of facts about Guangyu Hou. If something is not in it, say it is not listed on the site instead of guessing.
 - If asked for citation counts or publication metrics not listed on the site, explicitly say not available on-site and suggest checking Google Scholar.
 - Do not fabricate publications, awards, affiliations, or links.
 - Keep answers concise and practical (under 200 words).`;
-
-const MAX_MESSAGES = 10;
-const CONTEXT_CACHE_TTL_MS = 10 * 60 * 1000;
-const MAX_CONTEXT_CHARS = 3200;
 const DEFAULT_CONTEXT_URL = "https://raw.githubusercontent.com/gy-hou/gy-hou.github.io/main/assets/ai/academic-assistant-index.md";
 const contextCache = { fetchedAt: 0, content: "" };
 
@@ -59,10 +62,6 @@ function sanitizeContext(raw) {
     .replace(/\r/g, "")
     .trim()
     .slice(0, MAX_CONTEXT_CHARS);
-}
-
-function shouldAttachContext(messages) {
-  return !messages.some((m) => m?.role === "assistant");
 }
 
 async function loadAssistantContext(env) {
@@ -113,13 +112,16 @@ export default {
       }
 
       const trimmed = trimAndSanitizeMessages(messages);
-      let systemPrompt = ACADEMIC_PROMPT;
-      if (shouldAttachContext(trimmed)) {
-        const context = await loadAssistantContext(env);
-        if (context) {
-          systemPrompt = `${ACADEMIC_PROMPT}\n\nOn-site index context:\n${context}`;
-        }
+      if (messages.filter((m) => m?.role === "user").length > MAX_USER_TURNS) {
+        return json({ reply: TURN_LIMIT_REPLY }, 200, env, request);
       }
+      // DeepSeek is stateless: the site facts must be sent on every turn, or the model
+      // has nothing to ground on and invents a profile. Never call it without them.
+      const context = await loadAssistantContext(env);
+      if (!context) {
+        return json({ error: "Site context unavailable" }, 503, env, request);
+      }
+      const systemPrompt = `${ACADEMIC_PROMPT}\n\nOn-site index context:\n${context}`;
 
       const res = await fetch("https://api.deepseek.com/chat/completions", {
         method: "POST",
@@ -128,9 +130,10 @@ export default {
           Authorization: `Bearer ${env.DEEPSEEK_API_KEY}`,
         },
         body: JSON.stringify({
-          model: "deepseek-chat",
+          model: MODEL,
           messages: [{ role: "system", content: systemPrompt }, ...trimmed],
-          max_tokens: 512,
+          thinking: { type: "disabled" },
+          max_tokens: 1024,
           temperature: 0.2,
           stream: false,
         }),
