@@ -1735,7 +1735,8 @@ main div:not(.profile):not(.card):not(.navbar) {
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s;
 
-    &:hover {
+    &:hover,
+    &[aria-expanded="true"] {
       color: var(--global-theme-color);
       border-bottom-color: var(--global-theme-color);
       text-decoration: none;
@@ -1745,5 +1746,10 @@ main div:not(.profile):not(.card):not(.navbar) {
       font-size: 0.9rem;
       color: var(--global-theme-color);
     }
+  }
+
+  // Panel opened by a tab-style link (Bootstrap collapse), on its own line
+  .hero-panel {
+    flex-basis: 100%;
   }
 }
