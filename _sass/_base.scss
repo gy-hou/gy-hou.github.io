@@ -234,6 +234,17 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+// On phones the profile is full width, so floating it only leaves a zero-width
+// gap that flex rows like .hero-links collapse into, overlapping the photo.
+@media (max-width: 575.98px) {
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;

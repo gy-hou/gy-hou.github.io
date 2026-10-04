@@ -15,12 +15,12 @@ social: false
 ---
 
 <div class="hero-links">
-  <a href="mailto:houguangyu@ustc.edu"><i class="fa-solid fa-envelope"></i> Email</a>
+  <a href="mailto:houguangyu@ustc.edu"><i class="fa-solid fa-envelope"></i> houguangyu@ustc.edu</a>
   <a href="https://scholar.google.com/" target="_blank"><i class="ai ai-google-scholar"></i> Scholar</a>
   <a href="https://github.com/gy-hou" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
 </div>
 
-I am a researcher holding a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on applying machine learning methods to financial markets, with particular interest in reinforcement learning for trading and NLP-driven market analysis.
+I am a researcher currently pursuing a Master of Computer Science at the University of Sydney, with a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on applying machine learning methods to financial markets, with particular interest in reinforcement learning for trading and NLP-driven market analysis.
 
 ## Research Interests
 
@@ -30,6 +30,7 @@ I am a researcher holding a Master of Finance (Big Data & FinTech) from the Univ
 
 ## Education
 
+- **Master of Computer Science**, University of Sydney (in progress)
 - **M.Fin** (Big Data & FinTech), University of Science and Technology of China
 - **B.B.A** (Management Information Systems)
 - **B.Sc** (Economic Statistics)
