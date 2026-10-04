@@ -40,8 +40,12 @@ I am a researcher currently pursuing a Master of Computer Science at the Univers
 
 ## Competitions
 
-- GLEE Competition, IAB Workshop at NeurIPS 2026 (agent development and evaluation), 2026: co-developed agents for bargaining, negotiation, and persuasion; the submitted agent, lucas-agent4, ranked 27th on the final agent leaderboard. Analysed decision logs and rating comparisons to check whether strategy changes actually executed and whether apparent gains reflected reliable evidence; co-authored a research manuscript (not in the publications list above).
-- WAIC FutureTech OPC Independent Pioneer Challenge, Skill contest, 2026: developed the One-click Knowledge Base Skill, which placed fourth in the Skill contest.
+- GLEE Competition, IAB Workshop at NeurIPS 2026 (agent development and evaluation), 2026.
+  - About the event: GLEE stands for Games in Language-based Economic Environments. It was the official competition of the IAB (Interpreting Agent Behavior) Workshop at NeurIPS 2026, organised by Eilam Shapira and Roi Reichart, and ran August 1–29, 2026, with agents playing language-based bargaining, negotiation, and persuasion games. Competition site: https://glee-competition.com. Workshop site: https://iab-agents.github.io/
+  - His work: co-developed agents for bargaining, negotiation, and persuasion; the submitted agent, lucas-agent4, ranked 27th on the final agent leaderboard. Analysed decision logs and rating comparisons to check whether strategy changes actually executed and whether apparent gains reflected reliable evidence; co-authored a research manuscript (not in the publications list above).
+- WAIC FutureTech OPC Independent Pioneer Challenge (OPC 独立先锋挑战赛), Skill contest, 2026.
+  - About the event: a challenge launched by WAIC (World Artificial Intelligence Conference) with OpenCSG for one-person companies (OPC = One-Person Company, 一人公司) and independent AI builders. Finals and awards took place at WAIC in Shanghai in July 2026.
+  - His work: developed the One-click Knowledge Base Skill, which placed fourth in the Skill contest.
 
 ## Blog (https://gy-hou.github.io/blog/)
 
