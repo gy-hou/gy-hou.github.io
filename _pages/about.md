@@ -37,3 +37,8 @@ I am a researcher currently pursuing a Master of Computer Science at the Univers
 - **M.Fin** (Big Data & FinTech), University of Science and Technology of China
 - **B.B.A** (Management Information Systems)
 - **B.Sc** (Economic Statistics)
+
+## Competitions
+
+- **GLEE Competition**, IAB Workshop at NeurIPS 2026 — submitted agent lucas-agent4 ranked 27th on the final agent leaderboard; co-authored a research manuscript
+- **WAIC FutureTech OPC Independent Pioneer Challenge** — 4th place, Skill contest (One-click Knowledge Base Skill)

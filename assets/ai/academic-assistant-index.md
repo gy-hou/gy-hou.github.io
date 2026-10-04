@@ -38,7 +38,7 @@ I am a researcher currently pursuing a Master of Computer Science at the Univers
 - learn-english skill for agents: a prompt-engineered framework for vocabulary memorization, sentence analysis, and collaborative corpus building. https://gy-hou.github.io/projects/learn-english-skill-for-agents/
 - Advanced-Prompts-Database: one click to get your own ChatGPT database without programming. https://gy-hou.github.io/projects/1_project/
 
-## Competitions
+## Competitions (listed on the homepage: https://gy-hou.github.io)
 
 - GLEE Competition, IAB Workshop at NeurIPS 2026 (agent development and evaluation), 2026.
   - About the event: GLEE stands for Games in Language-based Economic Environments. It was the official competition of the IAB (Interpreting Agent Behavior) Workshop at NeurIPS 2026, organised by Eilam Shapira and Roi Reichart, and ran August 1–29, 2026, with agents playing language-based bargaining, negotiation, and persuasion games. Competition site: https://glee-competition.com. Workshop site: https://iab-agents.github.io/
