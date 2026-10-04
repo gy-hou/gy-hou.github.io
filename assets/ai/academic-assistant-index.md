@@ -38,6 +38,11 @@ I am a researcher currently pursuing a Master of Computer Science at the Univers
 - learn-english skill for agents: a prompt-engineered framework for vocabulary memorization, sentence analysis, and collaborative corpus building. https://gy-hou.github.io/projects/learn-english-skill-for-agents/
 - Advanced-Prompts-Database: one click to get your own ChatGPT database without programming. https://gy-hou.github.io/projects/1_project/
 
+## Competitions
+
+- GLEE Competition, IAB Workshop at NeurIPS 2026 (agent development and evaluation), 2026: co-developed agents for bargaining, negotiation, and persuasion; the submitted agent, lucas-agent4, ranked 27th on the final agent leaderboard. Analysed decision logs and rating comparisons to check whether strategy changes actually executed and whether apparent gains reflected reliable evidence; co-authored a research manuscript (not in the publications list above).
+- WAIC FutureTech OPC Independent Pioneer Challenge, Skill contest, 2026: developed the One-click Knowledge Base Skill, which placed fourth in the Skill contest.
+
 ## Blog (https://gy-hou.github.io/blog/)
 
 - 2026-04-04: "From Novice to Advanced in OpenClaw: Skill Matrix Design and Custom Workflow Engineering". A structured guide to memory architecture optimization, skill matrix validation, and domain-specific workflow engineering in OpenClaw. https://gy-hou.github.io/blog/2026/openclaw-advanced/
@@ -65,3 +70,4 @@ I am a researcher currently pursuing a Master of Computer Science at the Univers
 - 2026-10-04: added contact and education; removed CV (page unpublished).
 - 2026-10-05: expanded to the full public homepage (about, research interests, publications with venues, projects, blog, news) plus an explicit "not on the site" list.
 - 2026-10-05: added Chinese names (侯光宇, 刘志迎, 莫鸿芳).
+- 2026-10-05: added competitions (GLEE at the NeurIPS 2026 IAB workshop; WAIC FutureTech OPC Skill contest).
