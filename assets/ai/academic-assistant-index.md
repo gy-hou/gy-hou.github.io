@@ -1,10 +1,10 @@
 # Academic Assistant Index
 
-Purpose: the single source of facts for the AI assistant on gy-hou.github.io. The worker sends this whole file with every reply, so the assistant knows nothing that isn't written here. When the About page, education, publications, projects, or blog change, update this file too.
+Purpose: the AI assistant's only source of personal facts about Guangyu Hou. The worker (worker/src/index.js, which holds the assistant's rules) sends this whole file with every reply. Edit this file and push to main to change what the assistant knows; it goes live within about 10 minutes with no worker redeploy. When the About page, education, publications, projects, or blog change, update this file too.
 
 ## Identity
 
-- Name: Guangyu Hou (English name: Lucas, also written "Lucas Hou").
+- Name: Guangyu Hou (Chinese name: 侯光宇; English name: Lucas, also written "Lucas Hou").
 - Homepage: https://gy-hou.github.io
 - Headline: Researcher in FinTech & Machine Learning.
 - Current status: pursuing a Master of Computer Science at the University of Sydney (in progress).
@@ -28,8 +28,8 @@ I am a researcher currently pursuing a Master of Computer Science at the Univers
 
 ## Publications (2 listed: https://gy-hou.github.io/publications/)
 
-1. Guangyu Hou. "Problems and Countermeasures of Industrial Investment Funds in China's New Economic Phase." Journal of Regional Financial Research, 2020.
-2. Zhiying Liu, Guangyu Hou, Hongfang Mo. "Research on the Influencing Factors of Subsidy Thresholds for Government-Guided Venture Capital Funds." Review of Investment Studies (CSSCI), 2021.
+1. Guangyu Hou (侯光宇). "Problems and Countermeasures of Industrial Investment Funds in China's New Economic Phase." Journal of Regional Financial Research, 2020.
+2. Zhiying Liu (刘志迎), Guangyu Hou (侯光宇), Hongfang Mo (莫鸿芳). "Research on the Influencing Factors of Subsidy Thresholds for Government-Guided Venture Capital Funds." Review of Investment Studies (CSSCI), 2021.
 
 ## Projects (https://gy-hou.github.io/projects/)
 
@@ -52,7 +52,7 @@ I am a researcher currently pursuing a Master of Computer Science at the Univers
 - Email: houguangyu@ustc.edu
 - GitHub: https://github.com/gy-hou
 
-## Not on the site: answer "not listed on the site", never guess
+## Personal facts not on the site: say "not listed on the site", never guess
 
 - No PhD program, advisor, supervisor, lab, or employer is listed.
 - Undergraduate institutions and all dates of study are not listed.
@@ -64,3 +64,4 @@ I am a researcher currently pursuing a Master of Computer Science at the Univers
 - 2026-04-11: initial version.
 - 2026-10-04: added contact and education; removed CV (page unpublished).
 - 2026-10-05: expanded to the full public homepage (about, research interests, publications with venues, projects, blog, news) plus an explicit "not on the site" list.
+- 2026-10-05: added Chinese names (侯光宇, 刘志迎, 莫鸿芳).
