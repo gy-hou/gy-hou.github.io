@@ -54,7 +54,7 @@ I am a researcher with graduate training in computer science at the University o
 
 - No PhD program, advisor, supervisor, lab, or employer is listed.
 - Undergraduate institutions and all dates of study are not listed.
-- Whether the University of Sydney Master of Computer Science is completed is not listed. Name it as listed; never say he has graduated from it or holds it.
+- Only if asked whether he has finished the University of Sydney Master of Computer Science: say it isn't listed. Don't raise it otherwise, and never say he has graduated from it or holds it.
 - Citation counts and h-index are not listed; suggest Google Scholar.
 - Age, nationality, location, and other personal details are not listed.
 
@@ -66,4 +66,4 @@ The assistant reads this log too, so entries must not name facts that are no lon
 - 2026-10-04: added contact and education; removed CV (page unpublished).
 - 2026-10-05: expanded to the full public homepage (about, research interests, publications with venues, projects, blog, news) plus an explicit "not on the site" list.
 - 2026-10-05: added Chinese names (侯光宇, 刘志迎, 莫鸿芳).
-- 2026-10-05: synced Education and the About text with the homepage; added a not-listed rule for whether the University of Sydney degree is completed.
+- 2026-10-05: synced Education and the About text with the homepage; added an only-if-asked rule for whether the University of Sydney degree is completed.
