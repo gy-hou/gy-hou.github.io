@@ -23,7 +23,7 @@ social: false
   </div>
 </div>
 
-I am a researcher currently pursuing a Master of Computer Science at the University of Sydney, with a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on applying machine learning methods to financial markets, with particular interest in reinforcement learning for trading and NLP-driven market analysis.
+I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on applying machine learning methods to financial markets, with particular interest in reinforcement learning for trading and NLP-driven market analysis.
 
 ## Research Interests
 
@@ -33,12 +33,6 @@ I am a researcher currently pursuing a Master of Computer Science at the Univers
 
 ## Education
 
-- **Master of Computer Science**, University of Sydney (in progress)
+- **Master of Computer Science**, University of Sydney
 - **M.Fin** (Big Data & FinTech), University of Science and Technology of China
-- **B.B.A** (Management Information Systems)
 - **B.Sc** (Economic Statistics)
-
-## Competitions
-
-- **GLEE Competition**, IAB Workshop at NeurIPS 2026 — submitted agent lucas-agent4 ranked 27th on the final agent leaderboard; co-authored a research manuscript
-- **WAIC FutureTech OPC Independent Pioneer Challenge** — 4th place, Skill contest (One-click Knowledge Base Skill)
