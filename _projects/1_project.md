@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Advanced-Prompts-Database
+published: false # hidden 2026-10-05: the Vercel demo is gone and the repo was renamed to gy-hou/karp-wiki
 description: One-Click to get your ChatGPT-database without Programming.
 img:
 importance: 1
@@ -8,12 +9,6 @@ category: work
 giscus_comments: true
 related_publications: false
 project_intro: true
-repository:
-  - gy-hou/chatgpt-advanced-prompts
----
-
-**[Demo](https://chatgpt-advanced-prompts-database.vercel.app/)**
-
 ---
 
 ### 📌 Introduction
