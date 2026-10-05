@@ -34,7 +34,6 @@ I am a researcher with graduate training in computer science at the University o
 - TrendR: Trend Research. Automated literature review, platform trend monitoring, and Obsidian knowledge management. https://gy-hou.github.io/projects/trendr/
 - OpenResource Wiki: an open-source knowledge base for AI tools, prompts, and agent skills, shared via Xiaohongshu and GitHub. https://gy-hou.github.io/projects/openresource-wiki/
 - learn-english skill for agents: a prompt-engineered framework for vocabulary memorization, sentence analysis, and collaborative corpus building. https://gy-hou.github.io/projects/learn-english-skill-for-agents/
-- Advanced-Prompts-Database: one click to get your own ChatGPT database without programming. https://gy-hou.github.io/projects/1_project/
 
 ## Blog (https://gy-hou.github.io/blog/)
 
@@ -67,3 +66,4 @@ The assistant reads this log too, so entries must not name facts that are no lon
 - 2026-10-05: expanded to the full public homepage (about, research interests, publications with venues, projects, blog, news) plus an explicit "not on the site" list.
 - 2026-10-05: added Chinese names (侯光宇, 刘志迎, 莫鸿芳).
 - 2026-10-05: synced Education and the About text with the homepage; added an only-if-asked rule for whether the University of Sydney degree is completed.
+- 2026-10-05: synced the Projects list with the site.
