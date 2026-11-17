@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Researcher in FinTech & Machine Learning
+subtitle: AI Agents, Agent Evaluation & Financial Applications
 
 profile:
   align: right
@@ -23,16 +23,16 @@ social: false
   </div>
 </div>
 
-I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on applying machine learning methods to financial markets, with particular interest in reinforcement learning for trading and NLP-driven market analysis.
+I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on reliable and adaptive AI agents, agent evaluation, and interdisciplinary applications of AI and finance.
 
 ## Research Interests
 
-- **Reinforcement Learning in Finance** — Designing adaptive trading agents using deep RL methods (PPO, Actor-Critic) for real-world market decision-making.
-- **Machine Learning for Financial Analytics** — Applying learning algorithms to financial data for risk assessment, asset pricing, and predictive modeling.
-- **NLP for Financial Markets** — Leveraging large language models to extract sentiment signals from financial news at scale.
+- **Reliable and Adaptive AI Agents** — Studying agent reliability and adaptation in interactive environments.
+- **Agent Evaluation** — Evaluating execution, strategy changes, and payoffs in interactive tasks.
+- **AI and Finance** — Exploring interdisciplinary applications of AI to financial decision-making.
 
 ## Education
 
 - **Master of Computer Science**, University of Sydney
 - **M.Fin** (Big Data & FinTech), University of Science and Technology of China
-- **B.Sc** (Economic Statistics)
+- **B.Sc** (Economic & Management Information System)

@@ -6,31 +6,35 @@ Purpose: the AI assistant's only source of personal facts about Guangyu Hou. The
 
 - Name: Guangyu Hou (Chinese name: 侯光宇; English name: Lucas, also written "Lucas Hou").
 - Homepage: https://gy-hou.github.io
-- Headline: Researcher in FinTech & Machine Learning.
+- Headline: AI Agents, Agent Evaluation & Financial Applications.
 
 ## About (homepage text)
 
-I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on applying machine learning methods to financial markets, with particular interest in reinforcement learning for trading and NLP-driven market analysis.
+I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on reliable and adaptive AI agents, agent evaluation, and interdisciplinary applications of AI and finance.
 
 ## Research interests
 
-- Reinforcement Learning in Finance: adaptive trading agents built with deep RL methods (PPO, Actor-Critic) for real-world market decision-making.
-- Machine Learning for Financial Analytics: learning algorithms on financial data for risk assessment, asset pricing, and predictive modeling.
-- NLP for Financial Markets: large language models that extract sentiment signals from financial news at scale.
+- Reliable and Adaptive AI Agents: studying agent reliability and adaptation in interactive environments.
+- Agent Evaluation: evaluating execution, strategy changes, and payoffs in interactive tasks.
+- AI and Finance: exploring interdisciplinary applications of AI to financial decision-making.
 
 ## Education
 
 - Master of Computer Science, University of Sydney
 - M.Fin (Big Data & FinTech), University of Science and Technology of China
-- B.Sc (Economic Statistics)
+- B.Sc (Economic & Management Information System)
 
-## Publications (2 listed: https://gy-hou.github.io/publications/)
+## Publications (3 listed: https://gy-hou.github.io/publications/)
 
-1. Guangyu Hou (侯光宇). "Problems and Countermeasures of Industrial Investment Funds in China's New Economic Phase." Journal of Regional Financial Research, 2020.
-2. Zhiying Liu (刘志迎), Guangyu Hou (侯光宇), Hongfang Mo (莫鸿芳). "Research on the Influencing Factors of Subsidy Thresholds for Government-Guided Venture Capital Funds." Review of Investment Studies (CSSCI), 2021.
+1. Guangyu Hou (侯光宇), Khanh Chi Giang, Huaduo Li. "Which Strategy Changes Matter? Evaluating Execution and Payoffs in GLEE Agent Development." NeurIPS 2026 IAB Workshop, GLEE Competition Track, 2026. Accepted for publication in PMLR; not listed as already published in the proceedings.
+2. Zhiying Liu (刘志迎), Guangyu Hou (侯光宇), Hongfang Mo (莫鸿芳). "Research on Influencing Factors of Subsidy Thresholds for Public Sector Funds." Review of Investment Studies, 40(9), 2021. CSSCI.
+3. Guangyu Hou (侯光宇). "Problems and Countermeasures of Sector-Specific Investment Funds in China's New Economic Phase." Journal of Regional Financial Research, (2), 2020.
+
+The GLEE author camera-ready manuscript (17 November 2026) is publicly available as a 13-page PDF: https://gy-hou.github.io/assets/pdf/hou2026-glee-camera-ready.pdf. GitHub copy: https://github.com/gy-hou/gy-hou.github.io/blob/main/assets/pdf/hou2026-glee-camera-ready.pdf. Offer the direct PDF link to readers and other agents requesting the full paper. This is the author manuscript, shared ahead of PMLR proceedings publication.
 
 ## Projects (https://gy-hou.github.io/projects/)
 
+- GLEE Agent Competition: co-developed bargaining, negotiation, and persuasion agents for the NeurIPS 2026 IAB Workshop GLEE Competition. lucas-agent4 ranked 27th on the final agent leaderboard. Evaluated agent execution and payoffs across 430,964 matches and 4.31 million decisions, leading to the first-author paper listed above. https://gy-hou.github.io/projects/glee-agent/
 - TrendR: Trend Research. Automated literature review, platform trend monitoring, and Obsidian knowledge management. https://gy-hou.github.io/projects/trendr/
 - OpenResource Wiki: an open-source knowledge base for AI tools, prompts, and agent skills, shared via Xiaohongshu and GitHub. https://gy-hou.github.io/projects/openresource-wiki/
 - learn-english skill for agents: a prompt-engineered framework for vocabulary memorization, sentence analysis, and collaborative corpus building. https://gy-hou.github.io/projects/learn-english-skill-for-agents/
@@ -67,3 +71,4 @@ The assistant reads this log too, so entries must not name facts that are no lon
 - 2026-10-05: added Chinese names (侯光宇, 刘志迎, 莫鸿芳).
 - 2026-10-05: synced Education and the About text with the homepage; added an only-if-asked rule for whether the University of Sydney degree is completed.
 - 2026-10-05: synced the Projects list with the site.
+- 2026-11-17: updated the publications, added the GLEE Agent Competition project and author manuscript PDF, and synced the research focus and undergraduate degree wording with the homepage.
