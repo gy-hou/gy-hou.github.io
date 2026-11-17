@@ -34,7 +34,8 @@ The GLEE author camera-ready manuscript (17 November 2026) is publicly available
 
 ## Projects (https://gy-hou.github.io/projects/)
 
-- GLEE Agent Competition: co-developed bargaining, negotiation, and persuasion agents for the NeurIPS 2026 IAB Workshop GLEE Competition. lucas-agent4 ranked 27th on the final agent leaderboard. Evaluated agent execution and payoffs across 430,964 matches and 4.31 million decisions, leading to the first-author paper listed above. https://gy-hou.github.io/projects/glee-agent/
+- GLEE Agent Competition: co-developed bargaining, negotiation, and persuasion agents for the NeurIPS 2026 IAB Workshop GLEE Competition. lucas-agent4 ranked 27th on the final agent leaderboard. Evaluated agent execution and payoffs across 430,964 matches and 4.31 million decisions, leading to the first-author paper listed above. Project: https://gy-hou.github.io/projects/glee-agent/. Official competition website: https://glee-competition.com/
+- WAIC 2026 Agent Skill Competition: developed One-click Knowledge Base Skill, a reusable skill for AI agents, for the WAIC FutureTech OPC Independent Pioneer Challenge. Placed 4th in the Agent Skill contest. This ranking applies to the Agent Skill contest, not the whole WAIC event. https://gy-hou.github.io/projects/waic-agent-skill/
 - TrendR: Trend Research. Automated literature review, platform trend monitoring, and Obsidian knowledge management. https://gy-hou.github.io/projects/trendr/
 - OpenResource Wiki: an open-source knowledge base for AI tools, prompts, and agent skills, shared via Xiaohongshu and GitHub. https://gy-hou.github.io/projects/openresource-wiki/
 - learn-english skill for agents: a prompt-engineered framework for vocabulary memorization, sentence analysis, and collaborative corpus building. https://gy-hou.github.io/projects/learn-english-skill-for-agents/
@@ -72,3 +73,4 @@ The assistant reads this log too, so entries must not name facts that are no lon
 - 2026-10-05: synced Education and the About text with the homepage; added an only-if-asked rule for whether the University of Sydney degree is completed.
 - 2026-10-05: synced the Projects list with the site.
 - 2026-11-17: updated the publications, added the GLEE Agent Competition project and author manuscript PDF, and synced the research focus and undergraduate degree wording with the homepage.
+- 2026-11-17: added the WAIC 2026 Agent Skill Competition project and its 4th-place result.
