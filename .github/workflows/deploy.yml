@@ -73,7 +73,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5" # 这个版本高于3.2，所以没问题
+          ruby-version: "3.3" # Use a supported patch release on current GitHub runners.
           bundler-cache: true
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
