@@ -11,6 +11,8 @@ category: work
 I co-developed bargaining, negotiation, and persuasion agents for the **GLEE Competition at the NeurIPS 2026 IAB Workshop**.
 Our agent **lucas-agent4 ranked 27th on the final agent leaderboard**.
 
+[Official GLEE competition website](https://glee-competition.com/)
+
 ## Agent Evaluation
 
 I evaluated agent execution and payoffs across **430,964 matches** and **4.31 million decisions**.
