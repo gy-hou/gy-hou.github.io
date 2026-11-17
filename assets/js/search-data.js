@@ -33,7 +33,12 @@ ninja.data = [{
         },{id: "news-redesigned-academic-homepage-with-a-clearer-research-focus-on-rl-ml-and-nlp-in-financial-markets",
           title: 'Redesigned academic homepage with a clearer research focus on RL, ML, and NLP...',
           description: "",
-          section: "News",},{id: "projects-learn-english-skill-for-agents",
+          section: "News",},{id: "projects-glee-agent-competition",
+          title: 'GLEE Agent Competition',
+          description: "Bargaining, negotiation, and persuasion agents for the NeurIPS 2026 IAB Workshop GLEE Competition.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/glee-agent/";
+            },},{id: "projects-learn-english-skill-for-agents",
           title: 'learn-english skill for agents',
           description: "A prompt-engineered framework for vocabulary memorization, sentence analysis, and collaborative corpus building.",
           section: "Projects",handler: () => {
