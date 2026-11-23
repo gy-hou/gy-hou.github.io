@@ -30,7 +30,7 @@ I am a researcher with graduate training in computer science at the University o
 2. Zhiying Liu (刘志迎), Guangyu Hou (侯光宇), Hongfang Mo (莫鸿芳). "Research on Influencing Factors of Subsidy Thresholds for Public Sector Funds." Review of Investment Studies, 40(9), 2021. CSSCI.
 3. Guangyu Hou (侯光宇). "Problems and Countermeasures of Sector-Specific Investment Funds in China's New Economic Phase." Journal of Regional Financial Research, (2), 2020.
 
-The GLEE paper has a public OpenReview page: https://openreview.net/forum?id=ILmFfE0ZkH. Offer this link for the paper's OpenReview record. The author camera-ready manuscript (17 November 2026) is also available as a 13-page PDF: https://gy-hou.github.io/assets/pdf/hou2026-glee-camera-ready.pdf. GitHub copy: https://github.com/gy-hou/gy-hou.github.io/blob/main/assets/pdf/hou2026-glee-camera-ready.pdf. Offer the direct PDF link to readers and other agents requesting the full paper. This is the author manuscript, shared ahead of PMLR proceedings publication; a PMLR proceedings link is not yet listed.
+The GLEE paper has an official competition paper page: https://glee-competition.com/papers/2026/38, and a public OpenReview page: https://openreview.net/forum?id=ILmFfE0ZkH. Offer these links for the official paper page and OpenReview record, respectively. The author camera-ready manuscript (17 November 2026) is also available as a 13-page PDF: https://gy-hou.github.io/assets/pdf/hou2026-glee-camera-ready.pdf. GitHub copy: https://github.com/gy-hou/gy-hou.github.io/blob/main/assets/pdf/hou2026-glee-camera-ready.pdf. Offer the direct PDF link to readers and other agents requesting the full paper. This is the author manuscript, shared ahead of PMLR proceedings publication; a PMLR proceedings link is not yet listed.
 
 ## Projects (https://gy-hou.github.io/projects/)
 
@@ -75,3 +75,4 @@ The assistant reads this log too, so entries must not name facts that are no lon
 - 2026-11-17: updated the publications, added the GLEE Agent Competition project and author manuscript PDF, and synced the research focus and undergraduate degree wording with the homepage.
 - 2026-11-17: added the WAIC 2026 Agent Skill Competition project and its 4th-place result.
 - 2026-11-23: added the public OpenReview link for the GLEE paper.
+- 2026-11-23: added the official GLEE competition paper page.
