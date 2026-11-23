@@ -24,7 +24,8 @@ Guangyu Hou, Khanh Chi Giang, and Huaduo Li (2026).
 **[Which Strategy Changes Matter? Evaluating Execution and Payoffs in GLEE Agent Development]({{ '/publications/' | relative_url }}#hou2026strategy).**
 NeurIPS 2026 IAB Workshop, GLEE Competition Track. **Accepted for publication in PMLR.**
 
-[Read / download the author manuscript (PDF)]({{ '/assets/pdf/hou2026-glee-camera-ready.pdf' | relative_url }})
+[OpenReview](https://openreview.net/forum?id=ILmFfE0ZkH)
+\| [Read / download the author manuscript (PDF)]({{ '/assets/pdf/hou2026-glee-camera-ready.pdf' | relative_url }})
 \| [GitHub copy](https://github.com/gy-hou/gy-hou.github.io/blob/main/assets/pdf/hou2026-glee-camera-ready.pdf)
 
 This is the author camera-ready manuscript (17 November 2026), shared ahead of the PMLR proceedings publication.
