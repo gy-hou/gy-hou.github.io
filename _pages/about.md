@@ -16,7 +16,6 @@ social: false
 
 <div class="hero-links">
   <a href="#hero-email" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="hero-email"><i class="fa-solid fa-envelope"></i> Email</a>
-  <a href="https://scholar.google.com/" target="_blank"><i class="ai ai-google-scholar"></i> Scholar</a>
   <a href="https://github.com/gy-hou" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
   <div class="collapse hero-panel" id="hero-email">
     <a href="mailto:houguangyu@ustc.edu">houguangyu@ustc.edu</a>

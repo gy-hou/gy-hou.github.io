@@ -176,6 +176,7 @@ ul.task-list input[type="checkbox"] {
 
   .card-title {
     color: var(--global-text-color);
+    font-family: var(--font-serif);
   }
 
   .card-body {
@@ -197,7 +198,7 @@ ul.task-list input[type="checkbox"] {
 
   .name {
     // 使用 h1 样式
-    font-family: var(--font-primary);
+    font-family: var(--font-serif);
     font-size: 2.8rem;
     font-weight: 700;
   }
@@ -210,14 +211,12 @@ ul.task-list input[type="checkbox"] {
 
   .description,
   .more-info p {
-    font-family: var(--font-serif);
     font-size: 0.8rem;
   }
 
   .more-info {
     margin-bottom: 2px;
     margin-top: 2px;
-    font-family: monospace;
 
     p {
       display: inline-block;
@@ -315,6 +314,10 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
+  }
+
+  .navbar-brand.title {
+    font-family: var(--font-serif);
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -654,7 +657,20 @@ html[data-theme="dark"] .repo .repo-img-dark {
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 575.98px) {
+    h1 {
+      font-size: 32px;
+    }
   }
 }
 
@@ -694,6 +710,10 @@ html[data-theme="dark"] .repo .repo-img-dark {
     padding-top: 2rem;
     padding-bottom: 2rem;
 
+    h3 {
+      font-size: 24px;
+    }
+
     .post-meta {
       color: var(--global-text-color-light);
       font-size: 0.875rem;
@@ -728,12 +748,13 @@ html[data-theme="dark"] .repo .repo-img-dark {
       color: var(--global-text-color);
 
       &:hover {
-        color: $black-color;
+        color: var(--global-text-color);
+        background-color: var(--global-highlight-color);
       }
     }
 
     &.active .page-link {
-      color: $white-color;
+      color: var(--global-hover-text-color);
       background-color: var(--global-theme-color);
 
       &:hover {
@@ -782,7 +803,7 @@ html[data-theme="dark"] .repo .repo-img-dark {
   }
 
   h2.category {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
@@ -813,7 +834,7 @@ html[data-theme="dark"] .repo .repo-img-dark {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-theme-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
@@ -840,7 +861,7 @@ html[data-theme="dark"] .repo .repo-img-dark {
           margin-bottom: 0.5rem;
 
           a {
-            color: white;
+            color: var(--global-hover-text-color);
 
             &:hover {
               text-decoration: none;
@@ -1204,7 +1225,8 @@ nav[data-toggle="toc"] {
     text-decoration: none;
 
     .card-title {
-      font-size: 0.95rem;
+      font-size: 22px;
+      line-height: 1.3;
     }
 
     .card-text {
@@ -1444,7 +1466,7 @@ ninja-keys::part(ninja-input-wrapper) {
 // highlight-search-term
 ::highlight(search) {
   background-color: var(--global-theme-color);
-  color: var(--global-text-color);
+  color: var(--global-hover-text-color);
 }
 
 // Social icons
@@ -1485,7 +1507,7 @@ ninja-keys::part(ninja-input-wrapper) {
 .news {
   .post-title {
     // 使用 h3/h4 样式
-    font-family: var(--font-primary);
+    font-family: var(--font-serif);
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -1495,22 +1517,12 @@ ninja-keys::part(ninja-input-wrapper) {
     font-family: var(--font-primary);
     font-size: 0.85rem;
   }
-
-  .post-description,
-  p {
-    font-family: var(--font-serif);
-  }
 }
 
 .projects {
   .card-title {
-    font-family: var(--font-primary);
     font-size: 1.5rem;
     font-weight: 600;
-  }
-
-  .card-text {
-    font-family: var(--font-serif);
   }
 
   .badge,
@@ -1529,12 +1541,7 @@ ninja-keys::part(ninja-input-wrapper) {
     font-size: 1.1rem;
   }
 
-  .author {
-    font-family: var(--font-serif);
-  }
-
   .venue {
-    font-family: var(--font-serif);
     font-style: italic;
   }
 
@@ -1631,42 +1638,31 @@ footer {
 // Subtitle 字体设置
 .post-header .desc,
 .desc {
-  font-family: var(--font-noto-serif);
+  font-family: var(--font-serif);
   font-style: italic;
   font-weight: 400;
 }
 
-// 基础字体设置 - 主体内容使用Neuton
 body {
-  font-family: var(--font-neuton);
+  font-family: var(--font-primary);
   font-size: 16px;
   line-height: 1.7;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-// 标题保持原有设置
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  font-family: var(--font-serif);
 }
 
-// 导航标题使用Anta bold
 .navbar-nav .nav-link,
 .nav-link {
-  font-family: var(--font-anta);
-  font-weight: 400; // Anta字体本身就很粗
   text-transform: uppercase;
   letter-spacing: 0.5px;
-}
-
-// 当前页面导航项
-.navbar-nav .nav-item.active > .nav-link {
-  font-family: var(--font-anta);
-  font-weight: 400;
 }
 
 // 首页小标题样式
@@ -1675,7 +1671,6 @@ h6 {
 .news h2,
 .announcements h2 {
   text-transform: capitalize;
-  font-family: var(--font-primary);
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -1695,16 +1690,14 @@ h2:contains("news") {
 main p,
 main li,
 main div:not(.profile):not(.card):not(.navbar) {
-  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 21px;
   line-height: 1.8; // 增加行高从1.6到1.8
   letter-spacing: 0.3px; // 增加字母间距
 }
 
-// Ensure about page biography text uses Source Serif Pro with better spacing
+// About page biography spacing
 .about-content,
 .biography {
-  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 21px;
   line-height: 1.8;
   letter-spacing: 0.3px;

@@ -19,7 +19,10 @@ layout: default
         <h1 class="post-title"><i class="fa-solid fa-calendar fa-sm"></i> {{ page.date | date: '%Y' }}</h1>
         <p class="post-description">an archive of {{ page.collection_name }} from this year</p>
       {% elsif page.type == 'tags' %}
-        <h1 class="post-title"><i class="fa-solid fa-hashtag fa-sm"></i> {{ page.title }}</h1>
+        <h1 class="post-title">
+          <i class="fa-solid fa-hashtag fa-sm"></i>
+          {% if page.url contains '/blog/' %}{% include tag_label.liquid tag=page.title %}{% else %}{{ page.title }}{% endif %}
+        </h1>
         <p class="post-description">an archive of {{ page.collection_name }} with this tag</p>
       {% endif %}
     </header>

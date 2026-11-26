@@ -38,22 +38,22 @@ $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Light mode colors
-$light-bg-color: #f7fafc !default;
-$light-card-bg-color: #ffffff !default;
-$light-text-color: #2d3748 !default;
-$light-text-color-light: #718096 !default;
-$light-border-color: #e2e8f0 !default;
-$light-theme-color: #088f8f !default;
-$light-hover-color: #067d7d !default;
+$light-bg-color: #faf9f6 !default;
+$light-card-bg-color: #fbf8f1 !default;
+$light-text-color: #25211c !default;
+$light-text-color-light: #5d564c !default;
+$light-border-color: #d8cdba !default;
+$light-theme-color: #a9532f !default;
+$light-hover-color: #824022 !default;
 
 // Dark mode colors
-$dark-bg-color: #1a202c !default;
-$dark-card-bg-color: #2d3748 !default;
-$dark-text-color: #e2e8f0 !default;
-$dark-text-color-light: #a0aec0 !default;
-$dark-border-color: #4a5568 !default;
-$dark-theme-color: #38b2ac !default;
-$dark-hover-color: #4fd1c5 !default;
+$dark-bg-color: #211e1a !default;
+$dark-card-bg-color: #2c2823 !default;
+$dark-text-color: #f6f1e7 !default;
+$dark-text-color-light: #c5bbac !default;
+$dark-border-color: #655c50 !default;
+$dark-theme-color: #e59b78 !default;
+$dark-hover-color: #f2b496 !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";
@@ -70,27 +70,13 @@ $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
 
 // Font families
-$font-primary:
-  "Inter",
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Roboto,
-  sans-serif !default;
-$font-serif: "Crimson Text", "Georgia", "Times New Roman", serif !default;
-$font-mono: "JetBrains Mono", "Fira Code", "Monaco", "Consolas", monospace !default;
-$font-neuton: "Neuton", "Georgia", serif !default;
-$font-noto-serif: "Noto Serif", "Georgia", serif !default;
-$font-anta: "Anta", "Arial Black", sans-serif !default;
-$font-source-serif: "Source Serif Pro", Georgia, serif !default;
+$font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !default;
 
 // CSS Custom Properties for fonts
 :root {
   --font-primary: #{$font-primary};
   --font-serif: #{$font-serif};
   --font-mono: #{$font-mono};
-  --font-neuton: #{$font-neuton};
-  --font-noto-serif: #{$font-noto-serif};
-  --font-anta: #{$font-anta};
-  --font-source-serif: #{$font-source-serif};
 }

@@ -1,0 +1,2 @@
+{{- include.tag | slice: 0 | upcase | escape -}}
+{{- include.tag | slice: 1, include.tag.size | escape -}}
