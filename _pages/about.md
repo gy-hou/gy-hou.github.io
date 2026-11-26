@@ -22,12 +22,12 @@ social: false
   </div>
 </div>
 
-I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My research examines how LLM-based agents make economic decisions and interact strategically in multi-agent environments.
+I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance from the University of Science and Technology of China. My research examines how LLM-based agents make economic decisions and interact strategically in multi-agent environments.
 
 {% include research_framework.liquid %}
 
 ## Education
 
 - **Master of Computer Science**, University of Sydney
-- **M.Fin** (Big Data & FinTech), University of Science and Technology of China
+- **Master of Finance**, University of Science and Technology of China
 - **B.Sc** (Economic & Management Information System)
