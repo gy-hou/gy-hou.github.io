@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI Agents, Agent Evaluation & Financial Applications
+subtitle: Economic Behaviour and Strategic Interaction of LLM-based Multi-Agent Systems
 
 profile:
   align: right
@@ -23,13 +23,9 @@ social: false
   </div>
 </div>
 
-I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on reliable and adaptive AI agents, agent evaluation, and interdisciplinary applications of AI and finance.
+I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My research examines how LLM-based agents make economic decisions and interact strategically in multi-agent environments.
 
-## Research Interests
-
-- **Reliable and Adaptive AI Agents** — Studying agent reliability and adaptation in interactive environments.
-- **Agent Evaluation** — Evaluating execution, strategy changes, and payoffs in interactive tasks.
-- **AI and Finance** — Exploring interdisciplinary applications of AI to financial decision-making.
+{% include research_framework.liquid %}
 
 ## Education
 

@@ -6,17 +6,29 @@ Purpose: the AI assistant's only source of personal facts about Guangyu Hou. The
 
 - Name: Guangyu Hou (Chinese name: 侯光宇; English name: Lucas, also written "Lucas Hou").
 - Homepage: https://gy-hou.github.io
-- Headline: AI Agents, Agent Evaluation & Financial Applications.
+- Headline: Economic Behaviour and Strategic Interaction of LLM-based Multi-Agent Systems.
 
 ## About (homepage text)
 
-I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My work focuses on reliable and adaptive AI agents, agent evaluation, and interdisciplinary applications of AI and finance.
+I am a researcher with graduate training in computer science at the University of Sydney and a Master of Finance (Big Data & FinTech) from the University of Science and Technology of China. My research examines how LLM-based agents make economic decisions and interact strategically in multi-agent environments.
 
-## Research interests
+## Research focus
 
-- Reliable and Adaptive AI Agents: studying agent reliability and adaptation in interactive environments.
-- Agent Evaluation: evaluating execution, strategy changes, and payoffs in interactive tasks.
-- AI and Finance: exploring interdisciplinary applications of AI to financial decision-making.
+Economic Behaviour and Strategic Interaction of LLM-based Multi-Agent Systems.
+
+I bring economic models and computational methods together to study decision-making, interaction, and games among LLM-based agents.
+
+The homepage framework connects two disciplinary foundations to Agentic Economics and four research areas:
+
+- Economics & Finance: game theory (strategic choices and equilibria); utility functions (preferences, payoffs, and trade-offs); information asymmetry (private information, beliefs, and signals); incentive mechanisms (rules, contracts, and reward design).
+- Computer Science: large language models (reasoning, communication, and tool use); multi-agent systems (agent architectures and interaction protocols); reinforcement learning (learning policies from rewards and feedback); algorithms (search, planning, and optimisation).
+- Agentic Economics: agent decision-making, interaction, and strategic behaviour in economic environments.
+- Agent Negotiation: How do LLM agents bargain and reach agreements when preferences and information differ? Focus: bargaining, information asymmetry, and strategic communication.
+- Agent Loyalty: When do LLM agents preserve a principal's objectives under conflicting incentives and asymmetric information? Focus: principal–agent problems, incentive compatibility, and delegated objectives.
+- Agent Swarm: How do local interactions among many LLM agents produce collective coordination, emergent behaviour, or instability? Focus: collective coordination, emergent behaviour, and learning dynamics.
+- Agent Markets: How do market rules and incentives shape resource allocation, competition, and equilibrium among LLM agents? Focus: mechanism design, resource allocation, and equilibrium.
+
+These are research interests and questions, not claims of completed experiments or established findings.
 
 ## Education
 
@@ -76,3 +88,4 @@ The assistant reads this log too, so entries must not name facts that are no lon
 - 2026-11-17: added the WAIC 2026 Agent Skill Competition project and its 4th-place result.
 - 2026-11-23: added the public OpenReview link for the GLEE paper.
 - 2026-11-23: added the official GLEE competition paper page.
+- 2026-11-26: updated the research focus and added the Agentic Economics framework with four research areas.
