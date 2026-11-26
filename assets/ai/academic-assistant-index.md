@@ -18,7 +18,7 @@ Economic Behaviour and Strategic Interaction of LLM-based Multi-Agent Systems.
 
 I bring economic models and computational methods together to study decision-making, interaction, and games among LLM-based agents.
 
-The homepage framework connects two disciplinary foundations to Agentic Economics and four research areas:
+The homepage summarises Agentic Economics as “Economics × LLM-based Multi-Agent Systems”, with four themes: Negotiation, Loyalty, Swarm, and Markets. The underlying research interests are:
 
 - Economics & Finance: game theory (strategic choices and equilibria); utility functions (preferences, payoffs, and trade-offs); information asymmetry (private information, beliefs, and signals); incentive mechanisms (rules, contracts, and reward design).
 - Computer Science: large language models (reasoning, communication, and tool use); multi-agent systems (agent architectures and interaction protocols); reinforcement learning (learning policies from rewards and feedback); algorithms (search, planning, and optimisation).
@@ -71,7 +71,7 @@ The GLEE paper has an official competition paper page: https://glee-competition.
 - No PhD program, advisor, supervisor, lab, or employer is listed.
 - Undergraduate institutions and all dates of study are not listed.
 - Only if asked whether he has finished the University of Sydney Master of Computer Science: say it isn't listed. Don't raise it otherwise, and never say he has graduated from it or holds it.
-- Citation counts and h-index are not listed; suggest Google Scholar.
+- Citation counts and h-index are not listed.
 - Age, nationality, location, and other personal details are not listed.
 
 ## Maintenance log
